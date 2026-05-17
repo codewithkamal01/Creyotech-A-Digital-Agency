@@ -30,8 +30,6 @@ import sun_icon from "./sun_icon.svg";
 import moon_icon from "./moon_icon.svg";
 import SGSir from "../assets/siddharthSir.jpg";
 import Creyotech from "../assets/Creyotech.png";
-import aws from "../assets/aws.svg";
-import chatgpt from "../assets/aws.svg";
 
 export const company_logos = [
   microsoft_logo,
@@ -40,7 +38,6 @@ export const company_logos = [
   coinbase_logo,
   airbnb_logo,
   google_logo,
-  aws,
 ];
 
 const assets = {

@@ -15,8 +15,8 @@ function Navbar({ theme, setTheme }) {
       className="flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70"
     >
       <div className="flex items-center gap-1 font-bold">
-        <img src={assets.logo} className="w-4 sm:w-8 fill-primary" alt="" />
-        <h1 className="sm:text-xl text-sm dark:text-text-light">
+        <img src={assets.logo} className="w-6 sm:w-8 fill-primary" alt="" />
+        <h1 className="sm:text-xl text-lg dark:text-text-light">
           Digi
           <span className="text-primary dark:text-primary">.Agency</span>{" "}
         </h1>

@@ -6,17 +6,17 @@ function Hero() {
   return (
     <div
       id="home"
-      className="flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white"
+      className="flex flex-col items-center gap-6 py-15 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.7 }}
         viewport={{ once: true }}
-        className="inline-flex items-center gap-2 border border-gray-300 p1.5
+        className="inline-flex items-center gap-2 border border-gray-300 p-1.5
        pr-4 rounded-full"
       >
-        <img src={assets.group_profile} alt="" />
+        <img className="sm:w-28 w-18" src={assets.group_profile} alt="" />
         <p className="text-xs font-medium">trusted by 150+ people</p>
       </motion.div>
       <motion.h1
