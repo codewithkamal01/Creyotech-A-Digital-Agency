@@ -41,3 +41,43 @@
     box-shadow: 0 20px 80px var(--color-shadow-light);
   }
 }
+
+/* mega menu by primereact */
+
+.custom-menu.p-menu {
+  width: 240px;
+  border-radius: 24px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
+  animation: menuFade 0.18s ease;
+}
+
+.dark .custom-menu.p-menu {
+  background: rgba(20, 20, 20, 0.92);
+}
+
+@keyframes menuFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.custom-menu .p-menuitem-link {
+  border-radius: 16px;
+  padding: 14px 16px;
+  transition: all 0.2s ease;
+}
+
+.custom-menu .p-menuitem-link:hover {
+  background: rgba(59, 130, 246, 0.08);
+}

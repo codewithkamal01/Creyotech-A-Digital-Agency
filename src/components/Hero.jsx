@@ -1,6 +1,7 @@
 import React from "react";
 import assets from "../assets/assets";
 import { motion } from "motion/react";
+import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
   return (
@@ -24,13 +25,33 @@ function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
         viewport={{ once: true }}
-        className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl "
+        className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl"
       >
         Turning Imagination into{" "}
-        <span className="bg-primary bg-clip-text text-transparent ">
-          digital
-        </span>{" "}
-        impact.
+        <span className="bg-primary pt-1 pb-5 bg-clip-text text-transparent inline-block min-w-[320px]">
+          <TypeAnimation
+            sequence={[
+              "digital impact.",
+              1500,
+
+               "bold ideas.",
+              1500,
+
+              "modern solutions.",
+              1500,
+
+              "creative products.",
+              1500,
+
+              "real innovation.",
+              1500,
+            ]}
+            speed={50}
+            repeat={Infinity}
+            cursor={true}
+            wrapper="span"
+          />
+        </span>
       </motion.h1>
 
       <motion.p
