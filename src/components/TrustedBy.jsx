@@ -7,7 +7,7 @@ function TrustedBy() {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.6, delay:0.6 }}
       viewport={{ once: true }}
       className="flex flex-col items-center px-4 sm:px-12 lg:px24 xl:px-40 gap-6 pb-15 text-text-primary dark:text-text-light/80"
     >

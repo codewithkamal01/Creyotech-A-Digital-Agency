@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div
       id="home"
-      className="flex flex-col items-center gap-6 py-15 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-text-primary dark:text-text-light"
+      className="flex flex-col items-center gap-6 py-24 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-text-primary dark:text-text-light"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
