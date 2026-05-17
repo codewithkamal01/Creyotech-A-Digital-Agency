@@ -188,7 +188,7 @@ function ProcessTimeline() {
                       text-sm
                       leading-7
                       text-text-secondary
-                      dark:text-white/70
+                      dark:text-text-light/70
                     "
                   >
                     {item.desc}

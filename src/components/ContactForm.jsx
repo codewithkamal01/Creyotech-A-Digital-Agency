@@ -70,8 +70,8 @@ function ContactForm() {
       className="
         px-4
         py-3
-        text-gray-700
-        dark:text-white
+        text-text-primary
+        dark:text-text-light
         sm:px-8
         lg:px-16
         xl:px-24
@@ -83,12 +83,12 @@ function ContactForm() {
           className="
             rounded-3xl
             border
-            border-gray-200
-            bg-white
+            border-border-light
+            bg-bg-light
             p-6
             shadow-xl
-            dark:border-gray-700
-            dark:bg-gray-900
+            dark:border-border-dark
+            dark:bg-secondary
             sm:p-10
           "
         >
@@ -108,11 +108,11 @@ function ContactForm() {
                     gap-3
                     rounded-xl
                     border
-                    border-gray-200
-                    bg-gray-50
+                    border-border-light
+                    bg-bg-soft
                     px-4
-                    dark:border-gray-700
-                    dark:bg-gray-800
+                    dark:border-border-dark
+                    dark:bg-secondary
                     focus-within:border-primary
                   "
                 >
@@ -152,11 +152,11 @@ function ContactForm() {
                     gap-3
                     rounded-xl
                     border
-                    border-gray-200
-                    bg-gray-50
+                    border-border-light
+                    bg-bg-soft
                     px-4
-                    dark:border-gray-700
-                    dark:bg-gray-800
+                    dark:border-border-dark
+                    dark:bg-secondary
                     focus-within:border-primary
                   "
                 >
@@ -200,15 +200,15 @@ function ContactForm() {
                   resize-none
                   rounded-xl
                   border
-                  border-gray-200
-                  bg-gray-50
+                  border-border-light
+                  bg-bg-soft
                   px-4
                   py-3
                   outline-none
                   transition-all
                   focus:border-primary
-                  dark:border-gray-700
-                  dark:bg-gray-800
+                  dark:border-border-dark
+                  dark:bg-secondary
                 "
               />
             </div>
@@ -227,7 +227,7 @@ function ContactForm() {
                 py-3
                 text-sm
                 font-medium
-                text-white
+                text-text-light
                 transition-all
                 hover:scale-105
                 hover:shadow-lg

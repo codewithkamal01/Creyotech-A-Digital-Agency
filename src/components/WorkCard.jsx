@@ -15,7 +15,7 @@ function WorkCard({ work, index }) {
         className="
           overflow-hidden
           rounded-2xl
-          bg-[#dbe7ff]
+          bg-primary-50
           p-4
           transition-all
           duration-300
@@ -39,11 +39,11 @@ function WorkCard({ work, index }) {
 
       {/* Content */}
       <div className="mt-5">
-        <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+        <h3 className="text-xl font-semibold text-text-primary dark:text-text-light">
           {work.title}
         </h3>
 
-        <p className="mt-2 text-sm leading-6 text-gray-500 dark:text-gray-400">
+        <p className="mt-2 text-sm leading-6 text-text-secondary dark:text-text-light/70">
           {work.desc}
         </p>
       </div>

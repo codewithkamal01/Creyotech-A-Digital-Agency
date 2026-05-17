@@ -24,14 +24,14 @@ function ThemeToggle({ theme, setTheme }) {
         {theme === "dark" ? (
           <img
             onClick={() => setTheme("light")}
-            className="size-8.5 p-1.5 border border-gray-500 rounded-full"
+            className="size-8.5 p-1.5 border border-border-dark rounded-full"
             src={assets.sun_icon}
             alt=""
           />
         ) : (
           <img
             onClick={() => setTheme("dark")}
-            className="size-8.5 p-1.5 border border-gray-500 rounded-full"
+            className="size-8.5 p-1.5 border border-border-dark rounded-full"
             src={assets.moon_icon}
             alt=""
           />

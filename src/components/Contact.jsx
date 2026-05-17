@@ -11,7 +11,7 @@ function Contact() {
       viewport={{ once: true }}
       transition={{ staggerChildren: 0.2 }}
       id="contact-us"
-      className=" px-4 py-24 text-gray-700 dark:text-white sm:px-8 lg:px-16 xl:px-24"
+      className=" px-4 py-24 text-text-primary dark:text-text-light sm:px-8 lg:px-16 xl:px-24"
     >
       <div className="mb-16 flex flex-col gap-6 items-center">
         <Title

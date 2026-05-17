@@ -40,8 +40,8 @@ function Services() {
         overflow-hidden
         px-4
         py-24
-        text-gray-700
-        dark:text-white
+        text-text-primary
+        dark:text-text-light
         sm:px-8
         lg:px-16
         xl:px-24

@@ -6,14 +6,14 @@ function Hero() {
   return (
     <div
       id="home"
-      className="flex flex-col items-center gap-6 py-15 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white"
+      className="flex flex-col items-center gap-6 py-15 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-text-primary dark:text-text-light"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.7 }}
         viewport={{ once: true }}
-        className="inline-flex items-center gap-2 border border-gray-300 p-1.5
+        className="inline-flex items-center gap-2 border border-border-light p-1.5
        pr-4 rounded-full"
       >
         <img className="sm:w-28 w-18" src={assets.group_profile} alt="" />
@@ -27,7 +27,7 @@ function Hero() {
         className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl "
       >
         Turning Imagination into{" "}
-        <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent ">
+        <span className="bg-primary bg-clip-text text-transparent ">
           digital
         </span>{" "}
         impact.
@@ -38,7 +38,7 @@ function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1 }}
         viewport={{ once: true }}
-        className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-4/5 sm:max-w-lg pb-3"
+        className="text-sm sm:text-lg font-medium text-text-secondary dark:text-text-light/75 max-w-4/5 sm:max-w-lg pb-3"
       >
         Creating meaningful connections and turning big ideas into interactive
         digital experiences.

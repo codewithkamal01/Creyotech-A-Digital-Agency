@@ -18,7 +18,7 @@ function Title({ title, desc }) {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay:0.2 }}
         viewport={{ once: true }}
-        className="max-w-lg text-center text-gray-500 dark:text-white/75 mb-6"
+        className="max-w-lg text-center text-text-secondary dark:text-text-light/75 mb-6"
       >
         {desc}
       </motion.p>

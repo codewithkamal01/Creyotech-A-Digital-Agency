@@ -134,7 +134,7 @@ function StatsSection() {
                   text-sm
                   font-medium
                   text-text-secondary
-                  dark:text-white/70
+                  dark:text-text-light/70
                 "
               >
                 {item.label}

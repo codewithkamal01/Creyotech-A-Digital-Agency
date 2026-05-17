@@ -41,7 +41,7 @@ function Footer() {
             space-y-5
             text-sm
             text-text-secondary
-            dark:text-white/65
+            dark:text-text-light/65
           "
         >
           {/* Logo */}
@@ -136,7 +136,7 @@ function Footer() {
           className="
             max-w-lg
             text-text-secondary
-            dark:text-white/65
+            dark:text-text-light/65
           "
         >
           <h3
@@ -185,7 +185,7 @@ function Footer() {
                 py-3
                 text-sm
                 font-medium
-                text-white
+                text-text-light
                 transition-all
                 hover:scale-105
                 hover:shadow-lg

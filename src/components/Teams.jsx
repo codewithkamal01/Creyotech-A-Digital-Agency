@@ -10,7 +10,7 @@ function Teams() {
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ staggerChildren: 0.2 }}
-      className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-800 dark:text-white"
+      className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-text-primary dark:text-text-light"
     >
       <Title
         title="Meet the team"
@@ -25,7 +25,7 @@ function Teams() {
             transition={{ duration: 0.4, delay: index * 0.1 }}
             viewport={{ once: true }}
             key={index}
-            className="flex max-sm:flex-col items-center gap-5 p-4 rounded-xl border border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 hover:scale-103 transition-all duration-400"
+            className="flex max-sm:flex-col items-center gap-5 p-4 rounded-xl border border-border-light dark:border-border-dark bg-bg-light dark:bg-secondary shadow-xl shadow-soft dark:shadow-text-light/5 hover:scale-103 transition-all duration-400"
           >
             <img src={team.image} className="w-12 h-12 rounded-full" alt="" />
             <div>

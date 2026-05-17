@@ -67,7 +67,7 @@ function App() {
   }, []);
 
   return (
-    <div className="dark:bg-black relative">
+    <div className="dark:bg-bg-dark relative">
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />

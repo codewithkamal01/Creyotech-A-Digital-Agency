@@ -41,7 +41,7 @@ function FAQ() {
         sm:px-8
         lg:px-16
         xl:px-24
-        dark:text-white
+        dark:text-text-light
       "
     >
       <div className="mx-auto max-w-4xl">
@@ -151,7 +151,7 @@ function FAQ() {
                         text-sm
                         leading-7
                         text-text-secondary
-                        dark:text-white/70
+                        dark:text-text-light/70
                       "
                     >
                       {faq.answer}

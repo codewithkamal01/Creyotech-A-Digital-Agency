@@ -31,10 +31,10 @@ function ServiceCard({ service, index }) {
         overflow-hidden
         rounded-2xl
         border
-        border-gray-200
-        dark:border-gray-700
-        bg-white
-        dark:bg-gray-900
+        border-border-light
+        dark:border-border-dark
+        bg-bg-light
+        dark:bg-secondary
         shadow-lg
         transition-all
         duration-300
@@ -74,25 +74,25 @@ function ServiceCard({ service, index }) {
           items-center
           gap-6
           rounded-2xl
-          bg-white
+          bg-bg-light
           p-8
           transition-all
           duration-300
-          dark:bg-gray-900
+          dark:bg-secondary
         "
       >
         {/* Icon */}
-        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800">
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-bg-soft dark:bg-secondary">
           <img src={service.icon} alt="" className="w-9 object-contain" />
         </div>
 
         {/* Text */}
         <div className="flex-1">
-          <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+          <h3 className="text-lg font-semibold text-text-primary dark:text-text-light">
             {service.title}
           </h3>
 
-          <p className="mt-2 text-sm leading-6 text-gray-500 dark:text-gray-400">
+          <p className="mt-2 text-sm leading-6 text-text-secondary dark:text-text-light/70">
             {service.desc}
           </p>
         </div>
