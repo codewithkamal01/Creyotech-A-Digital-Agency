@@ -4,10 +4,16 @@ import group_profile from "./group_profile.png";
 import bgImage1 from "./bgImage1.png";
 import bgImage2 from "./bgImage2.png";
 import hero_img from "./hero_img.png";
-import microsoft_logo from "./microsoft_logo.png";
-import zoom_logo from "./zoom_logo.png";
-import rakuten_logo from "./rakuten_logo.png";
-import coinbase_logo from "./coinbase_logo.png";
+import spyfu from "./Spyfu.jpg";
+import meta from "./Meta.jpg";
+import moz from "./Moz.jpg";
+import aws from "./aws.png";
+import chatgpt from "./ChatGPT.jpg";
+import godaddy from "./GoDaddy.jpg";
+import mailchimp from "./Mailchimp.jpg";
+import google_analytics from "./Google-Analytics.jpg";
+import google_gemini from "./Google-Gemini.jpg";
+import yoast from "./Yoast.jpg";
 import ads_icon from "./ads_icon.svg";
 import content_icon from "./content_icon.svg";
 import marketing_icon from "./marketing_icon.svg";
@@ -23,31 +29,84 @@ import facebook_icon from "./facebook_icon.svg";
 import twitter_icon from "./twitter_icon.svg";
 import instagram_icon from "./instagram_icon.svg";
 import linkedin_icon from "./linkedin_icon.svg";
-import airbnb_logo from "./airbnb_logo.svg";
-import google_logo from "./google_logo.svg";
 import menu_icon_dark from "./menu_icon_dark.svg";
 import sun_icon from "./sun_icon.svg";
 import moon_icon from "./moon_icon.svg";
 import SGSir from "../assets/siddharthSir.jpg";
+import CTO from "../assets/cto.jpg";
+import CFO from "../assets/cfo.jpg";
+import CMO from "../assets/cmo.jpg";
+import priya from "../assets/priya.jpg";
 import Creyotech from "../assets/Creyotech.png";
+import Creyotech_dark from "../assets/Creyotech_dark.jpg";
 import msme from "../assets/msme.webp";
 import iso from "../assets/iso.webp";
 import iso2 from "../assets/iso-2.webp";
 import nsic from "../assets/nsic.webp";
 import cmmi from "../assets/cmmi.webp";
 import meity from "../assets/Meity.webp";
+import StartUpIndia from "../assets/StartUpIndia.webp";
+import MakeInIndia from "../assets/MakeInIndia.webp";
+import clg1 from "../assets/Campus Collaboration/clg1.jpg";
+import clg2 from "../assets/Campus Collaboration/clg2.jpg";
+import clg3 from "../assets/Campus Collaboration/clg3.jpeg";
+import clg4 from "../assets/Campus Collaboration/clg4.jpg";
+import clg5 from "../assets/Campus Collaboration/clg5.png";
+import clg6 from "../assets/Campus Collaboration/clg6.jpeg";
+import clg7 from "../assets/Campus Collaboration/clg7.jpg";
+import clg8 from "../assets/Campus Collaboration/clg8.jpeg";
+import clg9 from "../assets/Campus Collaboration/clg9.jpg";
+import clg10 from "../assets/Campus Collaboration/clg10.jpeg";
+import clg11 from "../assets/Campus Collaboration/clg11.jpeg";
+import cust1 from "../assets/CustomerReview/1-1.jpg";
+import cust2 from "../assets/CustomerReview/2-1.jpg";
+import cust3 from "../assets/CustomerReview/3-1.jpg";
+import cust4 from "../assets/CustomerReview/4-1.jpg";
+import cust5 from "../assets/CustomerReview/5-1.jpg";
+import cust6 from "../assets/CustomerReview/6-1.jpg";
+import cust7 from "../assets/CustomerReview/7-1.jpg";
+import cust8 from "../assets/CustomerReview/g-8.jpg";
 
 export const company_logos = [
-  microsoft_logo,
-  zoom_logo,
-  rakuten_logo,
-  coinbase_logo,
-  airbnb_logo,
-  google_logo,
+  google_analytics,
+  aws,
+  chatgpt,
+  moz,
+  google_gemini,
+  mailchimp,
+  godaddy,
+  meta,
+  spyfu,
+  yoast,
+];
+
+export const clg_logos = [
+  clg1,
+  clg2,
+  clg3,
+  clg4,
+  clg5,
+  clg7,
+  clg8,
+  clg9,
+  clg10,
+  clg11,
+];
+
+export const cust_reviews = [
+  cust1,
+  cust2,
+  cust3,
+  cust4,
+  cust5,
+  cust6,
+  cust7,
+  cust8,
 ];
 
 const assets = {
   Creyotech,
+  Creyotech_dark,
   logo,
   msme,
   iso,
@@ -55,6 +114,8 @@ const assets = {
   nsic,
   meity,
   cmmi,
+  MakeInIndia,
+  StartUpIndia,
   arrow_icon,
   group_profile,
   bgImage1,
@@ -86,20 +147,17 @@ export const teamData = [
   {
     name: "Daniel Schneider",
     title: "Chief Technology Officer (CTO)",
-    image:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
+    image: CTO,
   },
   {
     name: "Rohan Sengupta",
     title: "Chief Financial Officer (CFO)",
-    image:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
+    image: CFO,
   },
   {
     name: "Ananya Kapoor",
     title: "Chief Marketing Officer (CMO)",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop",
+    image: CMO,
   },
   {
     name: "Siddharth Ghosh",
@@ -109,7 +167,7 @@ export const teamData = [
   {
     name: "Priya Iyer",
     title: "Global People & Culture Head",
-    image: "https://randomuser.me/api/portraits/women/10.jpg",
+    image: priya,
   },
   {
     name: "Emily Parker",

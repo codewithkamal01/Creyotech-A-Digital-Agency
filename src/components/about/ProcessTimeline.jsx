@@ -43,7 +43,7 @@ function ProcessTimeline() {
     <section
       className="
         px-4
-        py-24
+        py-10
         sm:px-8
         lg:px-16
         xl:px-24

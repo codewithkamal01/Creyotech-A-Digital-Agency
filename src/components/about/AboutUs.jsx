@@ -1,16 +1,24 @@
 import React from "react";
-// import ProcessTimeline from "../ProcessTimeline";
 import AboutStorySection from "./AboutStorySection";
 import CareerOpportunities from "./CareerOpportunities";
 import GovernmentRecognition from "./GovernmentRecognition";
+import CampusCollab from "./CampusCollab";
+import StatsSection from "../StatsSection";
+import CustomerReviewsSection from "./CustomerReviewsSection";
+import ProcessTimeline from "./ProcessTimeline";
+import ProcessSection from "./ProcessSection";
 
 function AboutUs() {
   return (
     <div id="about-us" className="pt-30">
-      <AboutStorySection/>
-      <CareerOpportunities/>
-      {/* <ProcessTimeline /> */}
-      <GovernmentRecognition/>
+      <AboutStorySection />
+      <StatsSection />
+      <CareerOpportunities />
+      <GovernmentRecognition />
+      <ProcessTimeline />
+      <CampusCollab />
+      <ProcessSection/>
+      <CustomerReviewsSection />
     </div>
   );
 }

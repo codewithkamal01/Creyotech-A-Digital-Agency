@@ -47,26 +47,13 @@ function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <img
-              src={assets.logo}
+              src={assets.Creyotech}
               className="
-                w-5
-                sm:w-8
+                w-28
+                sm:w-30
               "
               alt=""
             />
-
-            <h1
-              className="
-                text-sm
-                font-bold
-                text-text-primary
-                dark:text-text-light
-                sm:text-xl
-              "
-            >
-              Digi
-              <span className="text-primary">.Agency</span>
-            </h1>
           </div>
 
           {/* Description */}
@@ -224,7 +211,7 @@ function Footer() {
           sm:justify-between
         "
       >
-        <p>Copyright 2026 © Kamal - All Rights Reserved.</p>
+        <p>Copyright 2026 © Creyotech It Services - All Rights Reserved.</p>
 
         {/* Social Icons */}
         <div className="flex items-center gap-4">

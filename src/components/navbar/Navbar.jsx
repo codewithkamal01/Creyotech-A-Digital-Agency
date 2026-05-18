@@ -40,12 +40,12 @@ function Navbar({ theme, setTheme }) {
     >
       {/* Logo */}
       <div className="flex items-center gap-1 font-bold">
-        <img src={assets.logo} className="w-6 sm:w-8" alt="" />
+        <img src={ theme === 'dark' ? assets.Creyotech_dark : assets.Creyotech} className="w-26 sm:w-30 rounded" alt="" />
 
-        <h1 className="text-lg dark:text-text-light sm:text-xl">
+        {/* <h1 className="text-lg dark:text-text-light sm:text-xl">
           Digi
           <span className="text-primary">.Agency</span>
-        </h1>
+        </h1> */}
       </div>
 
       {/* Nav Container */}

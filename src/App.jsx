@@ -8,10 +8,9 @@ import Contact from "./components/Contact";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
-import StatsSection from "./components/StatsSection";
 import Navbar from "./components/navbar/Navbar";
 import AboutUs from "./components/about/AboutUs";
-
+import { company_logos } from "./assets/assets";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -23,12 +22,15 @@ function App() {
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
-      <TrustedBy />
+      <TrustedBy
+        badge={"Trusted Worldwide"}
+        title={"Trusted by Leading Companies"}
+        logos={company_logos}
+      />
       <Services />
-      <StatsSection/>
       <LatestWork />
+      <AboutUs />
       <Teams />
-      <AboutUs/>
       <Contact />
       <FAQ />
       <Footer theme={theme} />

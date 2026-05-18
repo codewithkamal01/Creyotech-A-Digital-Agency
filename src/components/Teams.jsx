@@ -27,7 +27,7 @@ function Teams() {
             key={index}
             className="flex max-sm:flex-col items-center gap-5 p-4 rounded-xl border border-border-light dark:border-border-dark bg-bg-light dark:bg-secondary shadow-xl shadow-soft dark:shadow-text-light/5 hover:scale-103 transition-all duration-400"
           >
-            <img src={team.image} className="w-12 h-12 rounded-full" alt="" />
+            <img src={team.image} className="w-12 h-12 object-top rounded-full" alt="" />
             <div>
               <h3 className="font-bold text-sm">{team.name}</h3>
               <h3 className="text-xs opacity-60">{team.title}</h3>

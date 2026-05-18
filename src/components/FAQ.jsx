@@ -70,7 +70,7 @@ function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mb-16 flex flex-col gap-5 items-center text-center"
+          className="mb-16 flex flex-col gap-5 dark:text-text-light items-center text-center"
         >
           <Title
             title="Frequently asked questions"
