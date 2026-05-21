@@ -87,25 +87,15 @@ import gallery4 from "./gallery/gallery4.jpg";
 import gallery5 from "./gallery/gallery5.jpg";
 import gallery6 from "./gallery/gallery6.jpg";
 import gallery7 from "./gallery/gallery7.jpg";
-import gallery8 from "./gallery/gallery8.png";
-import gallery9 from "./gallery/gallery9.png";
-import gallery10 from "./gallery/gallery10.png";
-import gallery11 from "./gallery/gallery11.png";
-import gallery12 from "./gallery/gallery12.png";
 
 export const gallery_images = [
   gallery1,
   gallery2,
-  gallery12,
   gallery3,
   gallery7,
   gallery4,
-  gallery10,
   gallery5,
   gallery6,
-  gallery11,
-  gallery8,
-  gallery9,
 ];
 
 export const company_logos = [
@@ -206,31 +196,25 @@ export const teamData = [
   {
     name: "Daniel Schneider",
     title: "Chief Technology Officer (CTO)",
+    desc: "Daniel has 15+ years of experience in enterprise software, cloud architecture, and AI-driven systems. He specializes in scalable development, DevOps, and modern technologies, delivering reliable and future-ready digital solutions.",
     image: CTO,
   },
   {
     name: "Rohan Sengupta",
     title: "Chief Financial Officer (CFO)",
+    desc: "Rohan brings 16+ years of expertise in financial planning, compliance, taxation, and risk management for global IT organizations. He focuses on maintaining financial stability, transparency, and sustainable business growth.",
     image: CFO,
   },
   {
     name: "Ananya Kapoor",
     title: "Chief Marketing Officer (CMO)",
+    desc: "Ananya has 14+ years of experience in technology marketing, brand strategy, and digital growth. She specializes in B2B campaigns, AI-driven marketing, and positioning technology services for global market expansion.",
     image: CMO,
-  },
-  {
-    name: "Siddharth Ghosh",
-    title: "Project Manager",
-    image: SGSir,
   },
   {
     name: "Priya Iyer",
     title: "Global People & Culture Head",
+    desc: "Priya has 15+ years of experience in talent management, employee engagement, and HR operations across technology companies. She focuses on building strong workplace culture, scalable HR systems, and long-term workforce growth.",
     image: priya,
-  },
-  {
-    name: "Emily Parker",
-    title: "Content marketer",
-    image: "https://randomuser.me/api/portraits/women/11.jpg",
   },
 ];

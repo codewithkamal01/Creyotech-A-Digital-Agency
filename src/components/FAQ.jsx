@@ -193,7 +193,7 @@ function FAQ() {
           </div>
 
           {/* Answer Panel */}
-          <div className="min-h-[420px] mx-auto w-full max-w-2xl ">
+          <div className="min-h-[420px] flex items-center justify-center w-full max-w-2xl ">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -229,27 +229,6 @@ function FAQ() {
                 blur-3xl
               "
                 />
-
-                {/* Small Label */}
-                <div
-                  className="
-                inline-flex
-                rounded-full
-                border
-                border-primary/20
-                bg-primary/10
-                px-4
-                py-2
-                text-xs
-                font-semibold
-                uppercase
-                tracking-[2px]
-                text-primary
-              "
-                >
-                  Response
-                </div>
-
                 {/* Content */}
                 <div className="relative mt-8">
                   <p

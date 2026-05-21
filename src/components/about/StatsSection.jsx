@@ -165,6 +165,10 @@ function StatsSection() {
                     relative
                     overflow-hidden
                     rounded-3xl
+                    flex
+                    flex-col
+                    items-center
+                    justify-center
                     border
                     border-primary/10
                     bg-gradient-to-br

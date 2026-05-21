@@ -147,7 +147,7 @@ export default function AboutStorySection() {
                 className="
                   h-[320px]
                   w-full
-                  rounded-[1.5rem]
+                  rounded-3xl
                   object-cover
                   sm:h-[450px]
                   lg:h-[580px]
@@ -160,7 +160,7 @@ export default function AboutStorySection() {
                   absolute
                   bottom-4
                   left-1/2
-                  w-[90%]
+                  w-[80%]
                   max-w-sm
                   -translate-x-1/2
                   rounded-3xl
@@ -172,15 +172,15 @@ export default function AboutStorySection() {
 
                   sm:bottom-8
                   sm:left-8
-                  sm:w-fit
-                  sm:max-w-xs
+                  sm:w-full
+                  sm:max-w-lg
                   sm:translate-x-0
                   sm:p-5
                 "
               >
                 <p
                   className="
-                    text-[10px]
+                    text-[8px]
                     font-semibold
                     uppercase
                     tracking-[2px]
@@ -188,17 +188,17 @@ export default function AboutStorySection() {
                     sm:text-xs
                   "
                 >
-                  Since 2021
+                  Since 2016
                 </p>
 
                 <h3
                   className="
-                    mt-2
+                    mt-1  
                     text-base
                     font-semibold
                     leading-relaxed
                     text-white
-                    sm:text-xl
+                    sm:text-[15px]
                     sm:leading-snug
                   "
                 >

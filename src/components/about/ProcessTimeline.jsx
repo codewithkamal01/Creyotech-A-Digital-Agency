@@ -11,7 +11,7 @@ const timelineData = [
     cardTitle: "Foundation as a Startup-Focused Technology Partner",
     description:
       "Creyotech was founded with a clear purpose: to enable startups and SMEs to build dependable digital solutions without enterprise-level complexity or cost.",
-    image: timeLine[1],
+    image: timeLine[0],
   },
   {
     year: "2016",
@@ -20,17 +20,17 @@ const timelineData = [
     cardTitle: "Expansion Into Full-Scale Development",
     description:
       "The company expanded into modern web applications, scalable backend systems, and digital transformation services.",
-    image: timeLine[2],
+    image: timeLine[1],
   },
   {
     year: "2022",
     month: "April 2022",
     title: "Ecommerce Products & Partnerships",
     cardTitle:
-      "Ecommerce Product Development & Top Ecommerce Platform Partnerships",
+      "Ecommerce Product Development & Partnerships",
     description:
       "Creyotech integrated branding, SEO operations, UI/UX design, and digital growth services.",
-    image: timeLine[0],
+    image: timeLine[2],
   },
   {
     year: "2026",
@@ -245,7 +245,7 @@ function CompanyTimeline() {
                         />
 
                         {/* Content */}
-                        <div className="p-6 sm:p-8">
+                        <div className="p-6 sm:p-8 text-center">
                           {/* Mobile Timeline Content */}
                           <div className="mb-5 lg:hidden">
                             <p

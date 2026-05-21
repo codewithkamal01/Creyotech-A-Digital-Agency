@@ -192,8 +192,8 @@ function CareerOpportunities() {
     absolute
     bottom-4
     left-1/2
-    w-[90%]
-    max-w-xs
+    w-[80%]
+    max-w-sm
     -translate-x-1/2
     rounded-3xl
     border
@@ -204,15 +204,15 @@ function CareerOpportunities() {
 
     sm:bottom-8
     sm:left-8
-    sm:w-fit
-    sm:max-w-sm
+    sm:w-full
+    sm:max-w-md
     sm:translate-x-0
-    sm:p-5
+    sm:p-4
   "
               >
                 <p
                   className="
-      text-[10px]
+      text-[8px]
       font-semibold
       uppercase
       tracking-[2px]
@@ -225,16 +225,16 @@ function CareerOpportunities() {
 
                 <h3
                   className="
-      mt-2
-      text-base
+      mt-1
+      text-xs
       font-semibold
       leading-relaxed
       text-white
-      sm:text-xl
+      sm:text-lg
       sm:leading-snug
     "
                 >
-                  Learn, build, and grow with real industry experience.
+                  Learn and grow with real industry experience.
                 </h3>
               </div>
             </div>

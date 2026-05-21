@@ -255,7 +255,7 @@ function CustomerReviewsSection() {
                   src={item.logo}
                   alt="review platform"
                   className="
-                    max-h-16
+                    max-h-30
                     w-auto
                     object-cover
                   "

@@ -3,13 +3,12 @@ import assets from "../../assets/assets";
 
 function JourneyHero() {
   return (
-    <section
-      className="relative overflow-hidden">
+    <section className="relative overflow-hidden">
       <div className="mx-auto max-w-full">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
           viewport={{ once: true }}
           className="
             group
@@ -26,15 +25,17 @@ function JourneyHero() {
             src={assets.AboutHero}
             alt="Our Journey"
             className="
-              h-[380px]
-              w-full
-              object-top
-              transition-all
-              duration-700
-              group-hover:scale-102
-              sm:h-[450px]
-              lg:h-[620px]
-            "
+      h-[320px]
+      w-full
+      object-cover
+      object-center
+      transition-transform
+      duration-700
+      ease-out
+      group-hover:scale-105
+      sm:h-[450px]
+      lg:h-[620px]
+    "
           />
 
           {/* Overlay */}

@@ -14,8 +14,8 @@ function CampusCollab() {
         speed={18}
         className="!px-0 !pb-0"
         cardWidth="w-44"
-        cardHeight="h-24"
-        logoHeight="max-h-14"
+        cardHeight="h-32"
+        logoHeight="max-h-26"
       />
     </section>
   );
