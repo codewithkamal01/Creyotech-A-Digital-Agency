@@ -156,7 +156,7 @@ function Teams() {
           absolute
           top-3
           right-4
-          text-5xl
+          text-4xl
           font-bold
           leading-none
           text-primary/5

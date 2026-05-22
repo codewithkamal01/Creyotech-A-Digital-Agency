@@ -44,7 +44,7 @@ export default function AboutStorySection() {
           >
             <div
               className="
-                rounded-[2rem]
+                rounded-4xl
                 border
                 border-primary/10
                 bg-white/40
@@ -145,7 +145,7 @@ export default function AboutStorySection() {
                 src={assets.formation}
                 alt="About Creyotech"
                 className="
-                  h-[320px]
+                  h-[350px]
                   w-full
                   rounded-3xl
                   object-cover
@@ -169,7 +169,6 @@ export default function AboutStorySection() {
                   bg-black/50
                   p-4
                   backdrop-blur-xl
-
                   sm:bottom-8
                   sm:left-8
                   sm:w-full
@@ -180,7 +179,7 @@ export default function AboutStorySection() {
               >
                 <p
                   className="
-                    text-[8px]
+                    text-[12px]
                     font-semibold
                     uppercase
                     tracking-[2px]
@@ -194,7 +193,7 @@ export default function AboutStorySection() {
                 <h3
                   className="
                     mt-1  
-                    text-base
+                    text-xs
                     font-semibold
                     leading-relaxed
                     text-white

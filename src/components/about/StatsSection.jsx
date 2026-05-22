@@ -206,8 +206,8 @@ function StatsSection() {
                   <div
                     className="
                       flex
-                      h-12
-                      w-12
+                      h-20
+                      w-20
                       items-center
                       justify-center
                       rounded-2xl
