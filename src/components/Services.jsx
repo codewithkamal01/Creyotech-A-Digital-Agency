@@ -1,85 +1,74 @@
 import React from "react";
-import assets from "../assets/assets";
-import Title from "./Title";
 import ServiceCard from "./ServiceCard";
-import { motion } from "motion/react";
+
+import {
+  Globe,
+  Cloud,
+  Smartphone,
+  Megaphone,
+  Bot,
+  Briefcase,
+  BadgeDollarSign,
+  Users,
+} from "lucide-react";
+
+const services = [
+  {
+    title: "Website Development",
+    icon: Globe,
+    desc: "Custom websites and conversion-focused platforms designed to build strong digital presence and drive measurable growth.",
+  },
+  {
+    title: "Cloud Application Development",
+    icon: Cloud,
+    desc: "Scalable, secure and high-performance cloud applications built to streamline operations and improve business agility.",
+  },
+  {
+    title: "Mobile Application Development",
+    icon: Smartphone,
+    desc: "User-friendly Android and iOS applications engineered for seamless customer engagement and enhanced digital experiences.",
+  },
+  {
+    title: "Digital Marketing",
+    icon: Megaphone,
+    desc: "Integrated growth strategies including SEO, influencer campaigns and paid advertising to generate quality leads.",
+  },
+  {
+    title: "Proprietary AI Outreach Platforms",
+    icon: Bot,
+    desc: "AI-powered automation tools for intelligent lead generation, engagement acceleration and scalable outreach.",
+  },
+  {
+    title: "Business Incorporation & Statutory Compliance",
+    icon: Briefcase,
+    desc: "End-to-end support for company registration, GST, trademark protection and regulatory certifications.",
+  },
+];
 
 function Services() {
-  const servicesData = [
-    {
-      title: "Web Development",
-      desc: "We turn bold ideas into powerful digital solutions that connect, engage and inspire audiences.",
-      icon: assets.ads_icon,
-    },
-    {
-      title: "Content marketing",
-      desc: "Strategic content that builds trust, improves visibility and helps brands grow online.",
-      icon: assets.marketing_icon,
-    },
-    {
-      title: "Digital Marketing",
-      desc: "High quality writing crafted to communicate clearly and leave a lasting impression.",
-      icon: assets.content_icon,
-    },
-    {
-      title: "Social media",
-      desc: "Creative social campaigns that increase engagement and strengthen your online presence.",
-      icon: assets.social_icon,
-    },
-  ];
-
   return (
-    <motion.section
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      transition={{ staggerChildren: 0.2 }}
-      id="services"
-      className="
-        relative
-        overflow-hidden
-        px-4
-        py-24
-        text-text-primary
-        dark:text-text-light
-        sm:px-8
-        lg:px-16
-        xl:px-24
-      "
-    >
-      {/* Background */}
-      <img
-        src={assets.bgImage2}
-        alt=""
-        className="
-          absolute
-          -top-72
-          -left-72
-          -z-10
-          hidden
-          opacity-70
-          dark:hidden
-          lg:block
-        "
-      />
+    <section className="bg-bg-light dark:bg-bg-dark py-20 px-5 md:px-10">
+      <div className="max-w-7xl mx-auto">
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-4xl md:text-5xl font-bold text-secondary">
+            Our Services
+          </h2>
 
-      <div className="mx-auto max-w-6xl">
-        {/* Title */}
-        <div className="mb-16 flex flex-col gap-8 items-center">
-          <Title
-            title="How can we help?"
-            desc="From strategy to execution, we craft digital solutions that move your business forward."
-          />
+          <p className="mt-4 max-w-2xl mx-auto text-secondary/70">
+            Smart digital and business solutions built to help brands scale
+            faster and operate better.
+          </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {servicesData.map((service, index) => (
-            <ServiceCard key={index} service={service} index={index} />
+        {/* Cards */}
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          {services.map((service, index) => (
+            <ServiceCard key={index} {...service} />
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 

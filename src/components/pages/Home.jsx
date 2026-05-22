@@ -1,11 +1,13 @@
 import React from "react";
 import Services from "../Services";
-import Hero from "../Hero";
-import TrustedBy from "../TrustedBy";
 import LatestWork from "../LatestWork";
-import FAQ from "../FAQ";
-import Contact from "../Contact";
+import Contact from "../home/Contact";
 import { company_logos } from "../../assets/assets";
+import Hero from "../home/Hero";
+import FAQ from "../home/FAQ";
+import TrustedBy from "../home/TrustedBy";
+import EngagementModels from "../home/EngagementModels";
+import SpecialityCard from "../home/SpecialityCard";
 
 function Home() {
   return (
@@ -16,8 +18,10 @@ function Home() {
         title="Trusted by Leading Companies"
         logos={company_logos}
       />
+      <SpecialityCard/>
       <Services />
       <LatestWork />
+      <EngagementModels/>
       <FAQ />
       <Contact />
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../Title";
-import TrustedBy from "../TrustedBy";
 import { clg_logos } from "../../assets/assets";
+import TrustedBy from "../home/TrustedBy";
 
 function CampusCollab() {
   return (

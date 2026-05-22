@@ -90,6 +90,7 @@ import gallery7 from "./gallery/gallery7.webp";
 import gallery8 from "./gallery/gallery8.webp";
 import gallery9 from "./gallery/gallery9.webp";
 import gallery10 from "./gallery/gallery10.webp";
+import heroVideo from "./Home/digital-agency-kolkata-hero-v01.webm";
 
 export const gallery_images = [
   gallery1,
@@ -144,6 +145,7 @@ export const cust_reviews = [
 export const timeLine = [tl1, tl2, tl3, tl4];
 
 const assets = {
+  heroVideo,
   tl1,
   tl2,
   tl3,

@@ -1,6 +1,7 @@
 import React from "react";
 import assets from "../assets/assets";
 import { motion } from "motion/react";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 function Footer() {
   return (
@@ -10,12 +11,12 @@ function Footer() {
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
       className="
-        mt-20
+        mt-10
         bg-bg-soft
         px-4
         pt-14
         dark:bg-secondary
-        sm:mt-40
+        sm:mt-18
         sm:px-10
         lg:px-24
         xl:px-40
@@ -57,22 +58,22 @@ function Footer() {
           </div>
 
           {/* Description */}
-          <p className="leading-7">
+          <p className="leading-6">
             From strategy to execution, we craft digital solutions that move
             your business forward.
           </p>
 
           {/* Links */}
-          <ul className="flex flex-wrap gap-6">
+          <ul className="flex flex-wrap gap-3  text-xs">
             <li>
               <a
                 className="
                   transition-colors
                   hover:text-primary
                 "
-                href="#home"
+                href="#"
               >
-                Home
+                Privacy Policy
               </a>
             </li>
 
@@ -82,9 +83,9 @@ function Footer() {
                   transition-colors
                   hover:text-primary
                 "
-                href="#services"
+                href="#"
               >
-                Services
+                Refund Policy
               </a>
             </li>
 
@@ -94,9 +95,9 @@ function Footer() {
                   transition-colors
                   hover:text-primary
                 "
-                href="#our-work"
+                href="#"
               >
-                Our Work
+                Terms of Service
               </a>
             </li>
 
@@ -106,80 +107,98 @@ function Footer() {
                   transition-colors
                   hover:text-primary
                 "
-                href="#contact-us"
+                href="#"
               >
-                Contact Us
+                Project Delivery Policy
               </a>
             </li>
           </ul>
         </motion.div>
 
-        {/* Newsletter */}
+        {/* Contact*/}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
           className="
-            max-w-lg
-            text-text-secondary
-            dark:text-text-light/65
-          "
+    max-w-sm
+    space-y-4
+    text-sm
+    text-text-secondary
+    dark:text-text-light/70
+  "
         >
-          <h3
-            className="
-              text-lg
-              font-semibold
-              text-text-primary
-              dark:text-text-light
-            "
-          >
-            Subscribe to our newsletter
-          </h3>
-
-          <p className="mb-6 mt-3 text-sm leading-7">
-            The latest news, articles, and resources, sent to your inbox weekly.
-          </p>
-
-          {/* Input */}
-          <div className="flex gap-3 max-sm:flex-col">
-            <input
-              type="email"
-              placeholder="Enter your email"
+          {/* Address */}
+          <div className="flex items-start gap-3">
+            <div
               className="
-                w-full
-                rounded-xl
-                border
-                border-border-light
-                bg-bg-light
-                px-4
-                py-3
-                text-sm
-                outline-none
-                transition-all
-                focus:border-primary
-                dark:border-border-dark
-                dark:bg-bg-dark
-                dark:text-text-light
-              "
-            />
-
-            <button
-              className="
-                rounded-xl
-                bg-primary
-                px-6
-                py-3
-                text-sm
-                font-medium
-                text-text-light
-                transition-all
-                hover:scale-105
-                hover:shadow-lg
-              "
+        mt-1
+        rounded-lg
+        bg-primary/10
+        p-2
+        text-primary
+      "
             >
-              Subscribe
-            </button>
+              <MapPin size={16} />
+            </div>
+
+            <p className="leading-6">
+              Module 232, SDF Building, Sector V, Bidhannagar, Kolkata, West
+              Bengal 700091
+            </p>
+          </div>
+
+          {/* Phone */}
+          <div className="flex items-center gap-3">
+            <div
+              className="
+        rounded-lg
+        bg-primary/10
+        p-2
+        text-primary
+      "
+            >
+              <Phone size={16} />
+            </div>
+
+            <a
+              href="tel:+919674665053"
+              className="transition-all hover:text-primary"
+            >
+              (+91) 9674665053
+            </a>
+          </div>
+
+          {/* Email */}
+          <div className="flex items-start gap-3">
+            <div
+              className="
+        mt-1
+        rounded-lg
+        bg-primary/10
+        p-2
+        text-primary
+      "
+            >
+              <Mail size={16} />
+            </div>
+
+            <div className="flex flex-col">
+              <a
+                href="mailto:hr@creyotech.com"
+                className="transition-all hover:text-primary"
+              >
+                hr@creyotech.com
+              </a>
+
+              <a
+                href="mailto:creyotech@gmail.com"
+                className="transition-all hover:text-primary"
+              >
+                creyotech@gmail.com
+              </a>
+            </div>
           </div>
         </motion.div>
       </div>
