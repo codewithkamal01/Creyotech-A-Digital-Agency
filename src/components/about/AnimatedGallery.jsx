@@ -4,8 +4,13 @@ import { motion } from "framer-motion";
 import { gallery_images } from "../../assets/assets";
 
 function AnimatedGallery() {
-  // Duplicate for seamless marquee movement
-  const images = [...gallery_images, ...gallery_images];
+  // Split images into two rows
+  const topImages = gallery_images.slice(0, 5);
+  const bottomImages = gallery_images.slice(5, 10);
+
+  // Duplicate for seamless infinite marquee
+  const topRow = [...topImages, ...topImages];
+  const bottomRow = [...bottomImages, ...bottomImages];
 
   return (
     <section
@@ -129,12 +134,8 @@ function AnimatedGallery() {
             px-4
           "
         >
-          {images.map((image, index) => (
-            <GalleryCard
-              key={index}
-              image={image}
-              height={"h-[300px]"}
-            />
+          {topRow.map((image, index) => (
+            <GalleryCard key={index} image={image} height={"h-[300px]"} />
           ))}
         </motion.div>
       </div>
@@ -189,12 +190,8 @@ function AnimatedGallery() {
             px-4
           "
         >
-          {images.map((image, index) => (
-            <GalleryCard
-              key={index}
-              image={image}
-              height={"h-[300px]"}
-            />
+          {bottomRow.map((image, index) => (
+            <GalleryCard key={index} image={image} height={"h-[300px]"} />
           ))}
         </motion.div>
       </div>

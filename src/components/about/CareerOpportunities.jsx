@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import careerImg from "../../assets/career.jpg";
+import careerImg from "../../assets/career.webp";
 
 function CareerOpportunities() {
   return (

@@ -25,17 +25,13 @@ function JourneyHero() {
             src={assets.AboutHero}
             alt="Our Journey"
             className="
-      h-[320px]
-      w-full
-      object-cover
-      object-center
-      transition-transform
-      duration-700
-      ease-out
-      group-hover:scale-105
-      sm:h-[450px]
-      lg:h-[620px]
-    "
+    h-[300px]
+    w-full
+    object-cover
+    sm:h-[380px]
+    lg:h-[500px]
+    xl:h-[560px]
+  "
           />
 
           {/* Overlay */}
