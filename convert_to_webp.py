@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # Your assets folder
-TARGET_FOLDER = "./src/assets/gallery"
+TARGET_FOLDER = "./src/assets"
 
 # Supported formats
 SUPPORTED_FORMATS = (".jpg", ".jpeg", ".png")
