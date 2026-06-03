@@ -12,10 +12,10 @@ function Hero() {
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="auto"
         className="absolute inset-0 h-full w-full object-cover"
       >
-        <source src={assets.heroVideo} type="video/mp4" />
+        <source src={assets.heroVideo} type="video/webm" />
       </video>
 
       {/* Overlay */}
