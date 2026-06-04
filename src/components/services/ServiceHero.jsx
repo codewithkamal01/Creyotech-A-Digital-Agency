@@ -3,7 +3,7 @@ import { ArrowRight, Code2 } from "lucide-react";
 
 function ServiceHero({ hero }) {
   return (
-    <section className="relative overflow-hidden px-4 py-24 sm:px-8 lg:px-16 xl:px-24">
+    <section className="relative overflow-hidden px-4 py-10 sm:px-8 lg:px-16 xl:px-24">
       {/* Background Blur */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
@@ -21,7 +21,7 @@ function ServiceHero({ hero }) {
             {hero.badge}
           </div>
 
-          <h1 className="mt-6 text-5xl font-bold leading-tight md:text-6xl">
+          <h1 className="mt-6 text-5xl font-bold leading-tight md:text-6xl dark:text-text-light">
             {hero.title}
           </h1>
 
@@ -59,27 +59,11 @@ function ServiceHero({ hero }) {
                 px-7
                 py-4
                 font-medium
+                dark:text-text-light
               "
             >
               {hero.secondaryCTA?.label}
             </a>
-          </div>
-
-          <div className="mt-10 flex flex-wrap gap-5 text-sm">
-            {hero.trustPoints.map((point) => (
-              <span
-                key={point}
-                className="
-                  rounded-full
-                  bg-primary/10
-                  px-4
-                  py-2
-                  text-primary
-                "
-              >
-                ✓ {point}
-              </span>
-            ))}
           </div>
         </motion.div>
 

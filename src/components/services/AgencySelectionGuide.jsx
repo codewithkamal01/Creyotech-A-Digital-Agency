@@ -34,7 +34,7 @@ function AgencySelectionGuide({ data }) {
         <div className="max-w-3xl">
           <span className="font-medium text-primary">Agency Selection Guide</span>
 
-          <h2 className="mt-4 text-4xl font-bold leading-tight md:text-5xl">
+          <h2 className="mt-4 text-4xl font-bold leading-tight md:text-5xl dark:text-text-light">
             {data?.title}
           </h2>
 
@@ -111,11 +111,11 @@ function AgencySelectionGuide({ data }) {
         >
           <div className="grid gap-10 lg:grid-cols-[1fr_300px]">
             <div>
-              <span className="font-medium text-primary">
+              <span className="font-medium text-primary ">
                 Agency Evaluation Scorecard
               </span>
 
-              <h3 className="mt-3 text-3xl font-bold">
+              <h3 className="mt-3 text-3xl font-bold dark:text-text-light">
                 Simple Framework To Shortlist The Right Agency
               </h3>
 
@@ -137,6 +137,7 @@ function AgencySelectionGuide({ data }) {
                   p-4
                   shadow-sm
                   dark:bg-secondary
+                  dark:text-text-light
                 "
                   >
                     <CheckCircle2 size={18} className="text-primary" />
@@ -170,7 +171,7 @@ function AgencySelectionGuide({ data }) {
                   {minimumScore}
                 </span>
 
-                <span className="mt-2 text-xl font-semibold">/ 30</span>
+                <span className="mt-2 text-xl font-semibold dark:text-text-light">/ 30</span>
 
                 <p className="mt-3 max-w-[180px] text-center text-sm text-text-secondary">
                   Minimum acceptable score before considering an agency.
@@ -181,11 +182,11 @@ function AgencySelectionGuide({ data }) {
         </div>
         {/* Why Creyotech */}
         <div className="mt-20">
-          <span className="font-medium text-primary">
+          <span className="font-medium text-primary ">
             Why Businesses Choose Creyotech
           </span>
 
-          <h3 className="mt-3 text-4xl font-bold">
+          <h3 className="mt-3 text-4xl font-bold dark:text-text-light">
             Built For Business Outcomes, Not Just Visual Appeal
           </h3>
 
@@ -213,6 +214,7 @@ function AgencySelectionGuide({ data }) {
               hover:shadow-lg
               dark:border-border-dark
               dark:bg-secondary
+              dark:text-text-light
             "
               >
                 <CheckCircle2

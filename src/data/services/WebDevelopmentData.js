@@ -197,11 +197,6 @@ export const webDevelopmentData = {
         description:
           "Request references, case studies, and measurable results.",
       },
-
-      {
-        title: "Trust Your Instinct",
-        description: "Choose a long-term partner, not just a vendor.",
-      },
     ],
 
     scorecard: [

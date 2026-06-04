@@ -19,7 +19,7 @@ function FAQSection({ faqs }) {
             Frequently Asked Questions
           </span>
 
-          <h2 className="mt-4 text-4xl font-bold md:text-5xl">
+          <h2 className="mt-4 text-4xl font-bold md:text-5xl dark:text-text-light">
             Everything You Need To Know
           </h2>
 
@@ -136,7 +136,7 @@ function FAQSection({ faqs }) {
             text-center
           "
         >
-          <h3 className="text-2xl font-bold">Still Have Questions?</h3>
+          <h3 className="text-2xl font-bold dark:text-text-light">Still Have Questions?</h3>
 
           <p className="mt-3 text-text-secondary">
             Speak with our team and get expert guidance tailored to your

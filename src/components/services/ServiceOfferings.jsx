@@ -13,7 +13,7 @@ function ServiceOfferings({ offerings }) {
         <div className="max-w-3xl">
           <span className="font-medium text-primary">Website Solutions</span>
 
-          <h2 className="mt-4 text-4xl font-bold">
+          <h2 className="mt-4 text-4xl font-bold dark:text-text-light">
             Solutions Tailored To Different Stages Of Business
           </h2>
 
@@ -26,7 +26,7 @@ function ServiceOfferings({ offerings }) {
         <div className="mt-14 grid gap-8 lg:grid-cols-[320px_1fr]">
           {/* Tabs */}
 
-          <div className="space-y-3">
+          <div className="space-y-3 dark:text-text-light">
             {offerings.map((item) => (
               <button
                 key={item.id}
@@ -78,6 +78,7 @@ function ServiceOfferings({ offerings }) {
                 border
                 border-border-light
                 bg-bg-light
+                dark:bg-secondary
                 p-8
                 shadow-lg
               "
@@ -96,7 +97,7 @@ function ServiceOfferings({ offerings }) {
                 {active.badge}
               </span>
 
-              <h3 className="mt-5 text-3xl font-bold">{active.title}</h3>
+              <h3 className="mt-5 text-3xl font-bold dark:text-text-light">{active.title}</h3>
 
               <p className="mt-4 max-w-3xl text-text-secondary">
                 {active.description}
@@ -105,7 +106,7 @@ function ServiceOfferings({ offerings }) {
               <div className="mt-10 grid gap-8 md:grid-cols-2">
                 {/* Ideal For */}
 
-                <div>
+                <div className="dark:text-text-light">
                   <h4 className="mb-4 text-lg font-semibold">Ideal For</h4>
 
                   <div className="space-y-3">
@@ -121,7 +122,7 @@ function ServiceOfferings({ offerings }) {
 
                 {/* Features */}
 
-                <div>
+                <div className="dark:text-text-light">
                   <h4 className="mb-4 text-lg font-semibold">Key Features</h4>
 
                   <div className="space-y-3">
