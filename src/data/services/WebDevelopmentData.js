@@ -253,4 +253,235 @@ export const webDevelopmentData = {
         "Yes. We provide ongoing maintenance, support, and performance optimization plans.",
     },
   ],
+
+  packages: {
+    title: "Website Development Packages",
+
+    subtitle:
+      "Choose the website solution that aligns with your business stage, goals, and growth plans.",
+
+    plans: [
+      {
+        id: "starter-business-presence",
+
+        name: "Starter Business Presence",
+
+        badge: "Best for New Businesses",
+
+        shortDescription:
+          "A professional website designed to establish credibility and create a strong first digital presence.",
+
+        highlights: [
+          "Mobile Responsive",
+          "SEO Optimized",
+          "Lead Generation Ready",
+          "Professional Business Presence",
+        ],
+
+        idealFor: [
+          "Local Businesses",
+          "Startups",
+          "Professionals",
+          "Service Providers",
+        ],
+
+        features: [
+          "Up to 5 Static Pages",
+          "Mobile Responsive Design",
+          "Contact Form Integration",
+          "WhatsApp Click-to-Chat",
+          "Basic SEO Setup",
+          "Google Maps Integration",
+          "Business Information Pages",
+          "Call-to-Action Sections",
+          "Performance Optimized Layout",
+          "30 Days Support",
+        ],
+
+        deliverables: [
+          "Professional Business Website",
+          "Mobile-Friendly Experience",
+          "Lead Capture Capability",
+          "Search Engine Indexing Ready",
+        ],
+
+        support: "30 Days",
+
+        outcome: [
+          "Build business credibility",
+          "Establish online presence",
+          "Generate inquiries",
+          "Improve customer trust",
+        ],
+      },
+
+      {
+        id: "cms-scalable-site",
+
+        name: "CMS-Based Scalable Site",
+
+        badge: "Most Popular",
+
+        shortDescription:
+          "A content-managed website that allows businesses to easily update content while maintaining scalability.",
+
+        highlights: [
+          "Content Management System",
+          "SEO Ready",
+          "Easy Content Updates",
+          "Scalable Foundation",
+        ],
+        idealFor: [
+          "Growing Businesses",
+          "Content-Driven Brands",
+          "Consultants",
+          "Agencies",
+        ],
+
+        features: [
+          "Custom WordPress Development",
+          "Admin Dashboard Access",
+          "Blog Management System",
+          "Dynamic Content Sections",
+          "Advanced SEO Plugin Setup",
+          "E-Commerce Ready Architecture",
+          "Lead Generation Forms",
+          "Role-Based Access Control",
+          "Performance Optimization",
+          "Security Hardening",
+          "60 Days Support",
+        ],
+
+        deliverables: [
+          "Fully Managed CMS",
+          "SEO-Ready Website",
+          "Content Publishing System",
+          "Business Growth Infrastructure",
+        ],
+
+        support: "60 Days",
+
+        outcome: [
+          "Easy content updates",
+          "Better search visibility",
+          "Scalable growth foundation",
+          "Reduced dependency on developers",
+        ],
+      },
+
+      {
+        id: "high-performance-website",
+
+        name: "High-Performance Website",
+
+        badge: "Modern Web Experience",
+
+        shortDescription:
+          "A fast, modern, and highly interactive website built using modern frontend technologies.",
+
+        highlights: [
+          "React Powered",
+          "Fast Loading",
+          "Premium UX",
+          "Modern Architecture",
+        ],
+
+        idealFor: [
+          "Tech Startups",
+          "SaaS Companies",
+          "Product Businesses",
+          "Modern Brands",
+        ],
+
+        features: [
+          "Single Page Application (SPA)",
+          "React-Based Development",
+          "Component-Based Architecture",
+          "API Integration Ready",
+          "Advanced Animations & Interactions",
+          "Fast Loading Performance",
+          "Dynamic User Interface",
+          "Reusable UI Components",
+          "Scalable Frontend Structure",
+          "Technical SEO Readiness",
+          "90 Days Support",
+        ],
+
+        deliverables: [
+          "Premium User Experience",
+          "High-Speed Website",
+          "Interactive Interface",
+          "Modern Frontend Architecture",
+        ],
+
+        support: "90 Days",
+
+        outcome: [
+          "Improved engagement",
+          "Better conversion potential",
+          "Premium brand perception",
+          "Future-ready architecture",
+        ],
+      },
+
+      {
+        id: "fullstack-scalable-system",
+
+        name: "Full-Stack Scalable System",
+
+        badge: "Enterprise Solution",
+
+        shortDescription:
+          "A complete custom web application with backend systems, integrations, security, and cloud deployment.",
+
+        highlights: [
+          "Custom Business Logic",
+          "Secure Authentication",
+          "Cloud Deployment",
+          "Enterprise Scalability",
+        ],
+
+        idealFor: [
+          "Enterprises",
+          "SaaS Products",
+          "Marketplaces",
+          "Custom Platforms",
+        ],
+
+        features: [
+          "Custom Full-Stack Development",
+          "RESTful API Development",
+          "Backend Architecture",
+          "Real-Time Data Updates",
+          "Authentication & Authorization",
+          "Role-Based Access Management",
+          "Database Design & Optimization",
+          "Third-Party Integrations",
+          "Cloud Deployment Setup",
+          "Scalable Infrastructure",
+          "Security Best Practices",
+          "Performance Monitoring Setup",
+          "120 Days Support",
+        ],
+
+        deliverables: [
+          "Custom Business Platform",
+          "Scalable Backend System",
+          "Cloud Infrastructure",
+          "Enterprise-Grade Security",
+        ],
+
+        support: "120 Days",
+
+        outcome: [
+          "Business process automation",
+          "Operational efficiency",
+          "Scalable digital infrastructure",
+          "Long-term technology foundation",
+        ],
+      },
+    ],
+  },
 };
+
+export const webDevelopmentPackages = webDevelopmentData.packages;

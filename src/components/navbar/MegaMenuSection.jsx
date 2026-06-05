@@ -8,12 +8,7 @@ function MegaMenuSection({ title, items }) {
       </p>
 
       {items.map((item, index) => (
-        <PackageCard
-          key={index}
-          title={item.title}
-          packages={item.packages}
-          href={item.href}
-        />
+        <PackageCard key={index} title={item.title} href={item.href} />
       ))}
     </div>
   );

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function JobList({ jobs }) {
   return (
-    <div className="grid gap-6">
+    <div className="grid grid-cols-1 gap-6 mx-auto max-w-6xl space-y-6 sm:grid-cols-2">
       {jobs.map((job, index) => (
         <motion.div
           key={job.id}

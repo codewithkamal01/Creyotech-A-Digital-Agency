@@ -178,4 +178,455 @@ export const socialMediaMarketingData = {
         "Absolutely. We identify, vet, negotiate and manage influencer collaborations.",
     },
   ],
+
+  packages: {
+    title: "Social Media Marketing Growth Systems",
+
+    subtitle:
+      "From brand visibility and audience engagement to lead generation and full-funnel social growth, choose the system that aligns with your business goals.",
+
+    plans: [
+      {
+        id: "starter-growth-plan",
+
+        name: "Starter Growth Plan",
+
+        badge: "Best For Brand Presence",
+
+        shortDescription:
+          "A foundational social media management package focused on building brand visibility, consistency, and audience engagement.",
+        highlights: [
+          "Consistent Brand Presence",
+          "Audience Engagement",
+          "Content Strategy",
+          "Community Building",
+        ],
+        idealFor: [
+          "Local Businesses",
+          "Consultants",
+          "Professional Services",
+          "Personal Brands",
+        ],
+
+        coreServices: [
+          "Social Media Audit",
+          "Profile Optimization",
+          "Content Strategy",
+          "Platform Setup & Enhancement",
+        ],
+
+        contentServices: [
+          "12-16 Content Assets Per Month",
+          "Static Creatives",
+          "Carousel Posts",
+          "Basic Reels",
+          "Caption Writing",
+          "Hashtag Strategy",
+        ],
+
+        managementServices: [
+          "Scheduling & Publishing",
+          "Basic Community Management",
+          "Inbox Monitoring",
+          "Comment Management",
+        ],
+
+        advertisingServices: ["Basic Meta Ads Setup"],
+
+        deliverables: [
+          "Monthly Content Calendar",
+          "Published Content Assets",
+          "Brand Consistency Framework",
+          "Monthly Analytics Report",
+        ],
+
+        reporting: [
+          "Audience Growth",
+          "Engagement Metrics",
+          "Reach & Impressions",
+          "Content Performance",
+        ],
+
+        support: "Monthly Strategy Review",
+
+        outcome: [
+          "Consistent brand presence",
+          "Improved audience engagement",
+          "Strong social foundation",
+          "Initial visibility growth",
+        ],
+      },
+
+      {
+        id: "growth-acceleration-plan",
+
+        name: "Growth Acceleration Plan",
+
+        badge: "Most Popular",
+
+        shortDescription:
+          "A lead-generation focused social media growth system combining content, advertising, funnels, and conversion optimization.",
+        highlights: [
+          "Lead Generation Campaigns",
+          "Performance Advertising",
+          "Conversion Optimization",
+          "Growth Focused Content",
+        ],
+        idealFor: [
+          "Growing Businesses",
+          "B2B Companies",
+          "Service Providers",
+          "Lead Generation Brands",
+        ],
+
+        coreServices: [
+          "Everything In Starter",
+          "Growth Strategy Planning",
+          "Lead Funnel Development",
+          "Conversion Optimization",
+        ],
+
+        contentServices: [
+          "20-25 Conversion-Focused Assets",
+          "High-Converting Reels",
+          "Advanced Carousel Content",
+          "Educational & Promotional Content",
+        ],
+
+        managementServices: [
+          "Community Management",
+          "Lead Follow-Up Assistance",
+          "Content Scheduling",
+          "Audience Engagement",
+        ],
+
+        advertisingServices: [
+          "Meta Lead Generation Ads",
+          "Landing Page Integration",
+          "Lead Capture Setup",
+          "Campaign Optimization",
+        ],
+
+        deliverables: [
+          "Lead Generation Funnel",
+          "Monthly Campaign Reports",
+          "Content Strategy Updates",
+          "Lead Tracking Dashboard",
+        ],
+
+        reporting: [
+          "Lead Volume",
+          "Cost Per Lead",
+          "Ad Performance",
+          "Conversion Metrics",
+          "Audience Growth",
+        ],
+
+        support: "Bi-Weekly Growth Reviews",
+
+        outcome: [
+          "Predictable lead inflow",
+          "Higher conversion rates",
+          "Improved campaign efficiency",
+          "Structured lead generation system",
+        ],
+      },
+
+      {
+        id: "scale-authority-plan",
+
+        name: "Scale & Authority Plan",
+
+        badge: "Full Funnel Growth",
+
+        shortDescription:
+          "A comprehensive social media growth ecosystem combining content, paid media, automation, CRM integration, and authority building.",
+        highlights: [
+          "Brand Authority Building",
+          "Advanced Paid Media",
+          "Marketing Automation",
+          "Revenue Focused Growth",
+        ],
+        idealFor: [
+          "Scaling Businesses",
+          "D2C Brands",
+          "Enterprise Companies",
+          "Aggressive Growth Companies",
+        ],
+
+        coreServices: [
+          "Everything In Growth",
+          "Full Funnel Strategy",
+          "Authority Positioning",
+          "Revenue Attribution Planning",
+        ],
+
+        contentServices: [
+          "30-40 Premium Content Assets",
+          "High-Performance Reels",
+          "UGC Content Strategy",
+          "Authority Content",
+          "Multi-Platform Content Production",
+        ],
+
+        managementServices: [
+          "Advanced Community Management",
+          "Brand Reputation Monitoring",
+          "Audience Segmentation",
+          "Multi-Channel Coordination",
+        ],
+
+        advertisingServices: [
+          "Advanced Paid Media Strategy",
+          "A/B Testing",
+          "Retargeting Campaigns",
+          "CRM Integration",
+          "Marketing Automation",
+        ],
+
+        deliverables: [
+          "Growth Dashboard",
+          "CRM Integration Setup",
+          "Marketing Automation Workflow",
+          "Revenue Attribution Reporting",
+        ],
+
+        reporting: [
+          "Revenue Attribution",
+          "Lead Quality",
+          "Customer Acquisition Cost",
+          "Campaign ROI",
+          "Audience Growth",
+        ],
+
+        support: "Dedicated Growth Team",
+
+        outcome: [
+          "Scalable lead acquisition",
+          "Lower acquisition cost",
+          "Strong brand authority",
+          "Revenue-focused growth system",
+          "Predictable marketing performance",
+        ],
+      },
+    ],
+  },
+};
+
+export const socialMediaPackages = {
+  title: "Social Media Marketing Growth Systems",
+
+  subtitle:
+    "From brand visibility and audience engagement to lead generation and full-funnel social growth, choose the system that aligns with your business goals.",
+
+  plans: [
+    {
+      id: "starter-growth-plan",
+
+      name: "Starter Growth Plan",
+
+      badge: "Best For Brand Presence",
+
+      shortDescription:
+        "A foundational social media management package focused on building brand visibility, consistency, and audience engagement.",
+
+      idealFor: [
+        "Local Businesses",
+        "Consultants",
+        "Professional Services",
+        "Personal Brands",
+      ],
+
+      coreServices: [
+        "Social Media Audit",
+        "Profile Optimization",
+        "Content Strategy",
+        "Platform Setup & Enhancement",
+      ],
+
+      contentServices: [
+        "12-16 Content Assets Per Month",
+        "Static Creatives",
+        "Carousel Posts",
+        "Basic Reels",
+        "Caption Writing",
+        "Hashtag Strategy",
+      ],
+
+      managementServices: [
+        "Scheduling & Publishing",
+        "Basic Community Management",
+        "Inbox Monitoring",
+        "Comment Management",
+      ],
+
+      advertisingServices: ["Basic Meta Ads Setup"],
+
+      deliverables: [
+        "Monthly Content Calendar",
+        "Published Content Assets",
+        "Brand Consistency Framework",
+        "Monthly Analytics Report",
+      ],
+
+      reporting: [
+        "Audience Growth",
+        "Engagement Metrics",
+        "Reach & Impressions",
+        "Content Performance",
+      ],
+
+      support: "Monthly Strategy Review",
+
+      outcome: [
+        "Consistent brand presence",
+        "Improved audience engagement",
+        "Strong social foundation",
+        "Initial visibility growth",
+      ],
+    },
+
+    {
+      id: "growth-acceleration-plan",
+
+      name: "Growth Acceleration Plan",
+
+      badge: "Most Popular",
+
+      shortDescription:
+        "A lead-generation focused social media growth system combining content, advertising, funnels, and conversion optimization.",
+
+      idealFor: [
+        "Growing Businesses",
+        "B2B Companies",
+        "Service Providers",
+        "Lead Generation Brands",
+      ],
+
+      coreServices: [
+        "Everything In Starter",
+        "Growth Strategy Planning",
+        "Lead Funnel Development",
+        "Conversion Optimization",
+      ],
+
+      contentServices: [
+        "20-25 Conversion-Focused Assets",
+        "High-Converting Reels",
+        "Advanced Carousel Content",
+        "Educational & Promotional Content",
+      ],
+
+      managementServices: [
+        "Community Management",
+        "Lead Follow-Up Assistance",
+        "Content Scheduling",
+        "Audience Engagement",
+      ],
+
+      advertisingServices: [
+        "Meta Lead Generation Ads",
+        "Landing Page Integration",
+        "Lead Capture Setup",
+        "Campaign Optimization",
+      ],
+
+      deliverables: [
+        "Lead Generation Funnel",
+        "Monthly Campaign Reports",
+        "Content Strategy Updates",
+        "Lead Tracking Dashboard",
+      ],
+
+      reporting: [
+        "Lead Volume",
+        "Cost Per Lead",
+        "Ad Performance",
+        "Conversion Metrics",
+        "Audience Growth",
+      ],
+
+      support: "Bi-Weekly Growth Reviews",
+
+      outcome: [
+        "Predictable lead inflow",
+        "Higher conversion rates",
+        "Improved campaign efficiency",
+        "Structured lead generation system",
+      ],
+    },
+
+    {
+      id: "scale-authority-plan",
+
+      name: "Scale & Authority Plan",
+
+      badge: "Full Funnel Growth",
+
+      shortDescription:
+        "A comprehensive social media growth ecosystem combining content, paid media, automation, CRM integration, and authority building.",
+
+      idealFor: [
+        "Scaling Businesses",
+        "D2C Brands",
+        "Enterprise Companies",
+        "Aggressive Growth Companies",
+      ],
+
+      coreServices: [
+        "Everything In Growth",
+        "Full Funnel Strategy",
+        "Authority Positioning",
+        "Revenue Attribution Planning",
+      ],
+
+      contentServices: [
+        "30-40 Premium Content Assets",
+        "High-Performance Reels",
+        "UGC Content Strategy",
+        "Authority Content",
+        "Multi-Platform Content Production",
+      ],
+
+      managementServices: [
+        "Advanced Community Management",
+        "Brand Reputation Monitoring",
+        "Audience Segmentation",
+        "Multi-Channel Coordination",
+      ],
+
+      advertisingServices: [
+        "Advanced Paid Media Strategy",
+        "A/B Testing",
+        "Retargeting Campaigns",
+        "CRM Integration",
+        "Marketing Automation",
+      ],
+
+      deliverables: [
+        "Growth Dashboard",
+        "CRM Integration Setup",
+        "Marketing Automation Workflow",
+        "Revenue Attribution Reporting",
+      ],
+
+      reporting: [
+        "Revenue Attribution",
+        "Lead Quality",
+        "Customer Acquisition Cost",
+        "Campaign ROI",
+        "Audience Growth",
+      ],
+
+      support: "Dedicated Growth Team",
+
+      outcome: [
+        "Scalable lead acquisition",
+        "Lower acquisition cost",
+        "Strong brand authority",
+        "Revenue-focused growth system",
+        "Predictable marketing performance",
+      ],
+    },
+  ],
 };

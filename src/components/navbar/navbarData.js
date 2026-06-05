@@ -4,32 +4,44 @@ export const serviceSections = [
     items: [
       {
         title: "Starter Business Presence ",
-        packages: ["Starter", "Business"],
         href: "/services/web-app",
       },
       {
         title: "CMS-Based Scalable Site",
-        packages: ["CMS Pro", "CMS Scale"],
+        href: "/services/web-app",
+      },
+      {
+        title: "High-Performance Websites",
         href: "/services/web-app",
       },
       {
         title: "Full-Stack Scalable System",
-        packages: ["Growth", "Enterprise"],
         href: "/services/web-app",
       },
     ],
   },
   {
-    title: "Marketing",
+    title: "Digital Marketing",
     items: [
       {
-        title: "Digital Marketing",
-        packages: ["SEO + GAEO Optimization", "Local SEO & Visibility"],
+        title: "Foundation System ",
         href: "/services/digital-marketing",
       },
       {
+        title: "Growth System",
+        href: "/services/digital-marketing",
+      },
+      {
+        title: "Scale System",
+        href: "/services/digital-marketing",
+      },
+    ],
+  },
+  {
+    title: "Social Media Marketing",
+    items: [
+      {
         title: "Social Media Marketing ",
-        packages: ["Content Creation", "Advertising"],
         href: "/services/social-media-marketing",
       },
     ],

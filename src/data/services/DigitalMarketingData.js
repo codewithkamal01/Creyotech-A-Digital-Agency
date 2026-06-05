@@ -236,3 +236,242 @@ export const digitalMarketingData = {
     },
   ],
 };
+
+export const digitalMarketingPackages = {
+  title: "Digital Marketing Growth Systems",
+
+  subtitle:
+    "From foundational visibility to enterprise-scale acquisition, choose the growth system aligned with your business objectives.",
+
+  plans: [
+    {
+      id: "foundation-growth-system",
+
+      name: "Foundation Growth System",
+
+      badge: "Best For New Businesses",
+
+      shortDescription:
+        "A foundational digital marketing system designed to establish visibility, search presence, and basic lead generation infrastructure.",
+      highlights: [
+        "SEO Foundation Setup",
+        "Google Search Visibility",
+        "Business Listing Optimization",
+        "AI Search Readiness",
+      ],
+      idealFor: [
+        "New Businesses",
+        "Startups",
+        "MSMEs",
+        "Local Service Providers",
+      ],
+
+      coreServices: [
+        "Digital Marketing Audit",
+        "Business Listing Setup",
+        "Google Business Profile Optimization",
+        "Basic Website SEO",
+        "Search Visibility Setup",
+      ],
+
+      seoServices: [
+        "SEO Health Check",
+        "Technical SEO Fixes",
+        "Keyword Research",
+        "Basic On-Page Optimization",
+        "Indexing & Sitemap Configuration",
+      ],
+
+      geoServices: [
+        "Basic AI Search Readiness",
+        "Business Entity Optimization",
+        "Brand Mention Structuring",
+      ],
+
+      outreachServices: [
+        "LinkedIn Content Distribution",
+        "Basic Community Engagement",
+      ],
+
+      deliverables: [
+        "Search Console Setup",
+        "Analytics Setup",
+        "SEO Optimization Report",
+        "Monthly Visibility Report",
+      ],
+
+      reporting: [
+        "Keyword Visibility",
+        "Website Traffic",
+        "Search Impressions",
+        "Basic Engagement Metrics",
+      ],
+
+      support: "Monthly Optimization",
+
+      outcome: [
+        "Stronger search presence",
+        "Improved discoverability",
+        "Initial lead generation",
+        "Digital growth foundation",
+      ],
+    },
+
+    {
+      id: "growth-visibility-system",
+
+      name: "Growth Visibility System",
+
+      badge: "Most Popular",
+
+      shortDescription:
+        "A lead-focused growth system combining SEO, GEO, content marketing, and outbound campaigns to generate consistent opportunities.",
+      highlights: [
+        "SEO + GEO Strategy",
+        "Lead Generation Focused",
+        "Authority Building",
+        "Multi-Channel Outreach",
+      ],
+      idealFor: [
+        "Growing Businesses",
+        "B2B Companies",
+        "Professional Services",
+        "Consultants",
+      ],
+
+      coreServices: [
+        "Growth Strategy Development",
+        "Content Marketing",
+        "Lead Generation Funnel",
+        "Conversion Optimization",
+      ],
+
+      seoServices: [
+        "Advanced Keyword Research",
+        "Content Clusters",
+        "Technical SEO",
+        "Competitor Analysis",
+        "Backlink Building",
+        "Authority Development",
+      ],
+
+      geoServices: [
+        "AI Search Optimization",
+        "LLM Content Structuring",
+        "Entity Building",
+        "Trust Signal Optimization",
+      ],
+
+      outreachServices: [
+        "Cold Email Outreach",
+        "LinkedIn Outreach",
+        "Lead Qualification",
+        "Prospect Research",
+      ],
+
+      deliverables: [
+        "SEO Growth Dashboard",
+        "Lead Generation System",
+        "Content Calendar",
+        "Monthly Growth Reports",
+      ],
+
+      reporting: [
+        "Keyword Rankings",
+        "Organic Traffic",
+        "Lead Volume",
+        "Conversion Metrics",
+        "Campaign Performance",
+      ],
+
+      support: "Ongoing Growth Optimization",
+
+      outcome: [
+        "Consistent qualified leads",
+        "Improved search rankings",
+        "Higher authority",
+        "Predictable growth pipeline",
+      ],
+    },
+
+    {
+      id: "scale-revenue-system",
+
+      name: "Scale Revenue Acquisition System",
+
+      badge: "Enterprise Growth",
+
+      shortDescription:
+        "A comprehensive acquisition engine combining SEO, GEO, outreach, automation, paid campaigns, and advanced analytics.",
+      highlights: [
+        "Enterprise SEO",
+        "Revenue Attribution",
+        "Sales Pipeline Growth",
+        "AI Search Dominance",
+      ],
+      idealFor: [
+        "Scale-Ups",
+        "Enterprise Businesses",
+        "B2B Organizations",
+        "Revenue-Focused Companies",
+      ],
+
+      coreServices: [
+        "Revenue Growth Strategy",
+        "Marketing Automation",
+        "Multi-Channel Acquisition",
+        "Sales Alignment",
+      ],
+
+      seoServices: [
+        "Enterprise SEO",
+        "Advanced Technical SEO",
+        "Authority Building",
+        "Content Ecosystem Development",
+        "Large Scale Keyword Expansion",
+      ],
+
+      geoServices: [
+        "Generative Search Optimization",
+        "AI Discovery Optimization",
+        "Knowledge Graph Positioning",
+        "Brand Authority Signals",
+      ],
+
+      outreachServices: [
+        "Cold Email Outreach",
+        "WhatsApp Outreach",
+        "Outbound Tele-Sales",
+        "Lead Verification",
+        "Appointment Setting",
+      ],
+
+      deliverables: [
+        "Revenue Dashboard",
+        "Lead Pipeline System",
+        "Marketing Automation Workflows",
+        "Executive Performance Reports",
+      ],
+
+      reporting: [
+        "Revenue Attribution",
+        "Lead Quality",
+        "Pipeline Contribution",
+        "Channel Performance",
+        "ROI Tracking",
+      ],
+
+      support: "Dedicated Growth Team",
+
+      outcome: [
+        "Scalable lead generation",
+        "Lower customer acquisition cost",
+        "Revenue growth visibility",
+        "Multi-channel acquisition engine",
+      ],
+    },
+  ],
+};
+
+// Attach packages to the main data export for compatibility with ServicePage
+digitalMarketingData.packages = digitalMarketingPackages;

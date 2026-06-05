@@ -106,7 +106,7 @@ export const jobs = [
     location: "Remote",
     experience: "Freshers",
     description:
-      "Write blogs, website content, case studies, and SEO-friendly articles.",
+      "Write blogs, website content, case studies, and SEO-friendly articles in a good manner.",
   },
 
   {
