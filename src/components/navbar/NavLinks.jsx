@@ -30,6 +30,7 @@ function NavLinks({ activeMenu, setActiveMenu }) {
         from-primary
         to-primary/80
         p-7
+        mr-5
         text-white
       "
           >
