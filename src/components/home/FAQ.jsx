@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+AnimatePresence
 import { Plus } from "lucide-react";
 import Title from "../Title";
 
@@ -28,10 +29,6 @@ function FAQ() {
         "Absolutely. Every project is customizable based on your business goals and feature requirements.",
     },
   ];
-
-  const toggleFAQ = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
 
   return (
     <section

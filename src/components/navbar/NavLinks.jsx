@@ -39,7 +39,7 @@ function NavLinks({ activeMenu, setActiveMenu }) {
             </p>
 
             <h3 className="mt-4 text-2xl font-semibold leading-tight">
-              Let's build your next digital growth engine.
+              Let&apos;s build your next digital growth engine.
             </h3>
 
             <p className="mt-3 text-sm text-white/80">

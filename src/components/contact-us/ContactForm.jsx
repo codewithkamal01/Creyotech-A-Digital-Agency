@@ -123,7 +123,7 @@ function ContactForm() {
       text-primary
     "
           >
-            Let's Start a Conversation
+            Let&apos;s Start a Conversation
           </span>
 
           <h2
@@ -136,7 +136,7 @@ function ContactForm() {
       md:text-4xl
     "
           >
-            Let's Find the Right Solution for Your Business
+            Let&apos;s Find the Right Solution for Your Business
           </h2>
 
           <p
@@ -150,10 +150,10 @@ function ContactForm() {
       md:text-lg
     "
           >
-            Whether you need quick guidance or a detailed consultation, we're
-            here to support you. Every business challenge can be addressed with
-            a budget-friendly approach or an optimized, long-term solution. We
-            help you evaluate both, clearly and transparently.
+            Whether you need quick guidance or a detailed consultation,
+            We&apos;re here to support you. Every business challenge can be
+            addressed with a budget-friendly approach or an optimized, long-term
+            solution. We help you evaluate both, clearly and transparently.
           </p>
 
           <p
@@ -163,7 +163,7 @@ function ContactForm() {
       text-primary
     "
           >
-            Don't hesitate to get in touch.
+            Don&apos;t hesitate to get in touch.
           </p>
         </div>
 

@@ -1,13 +1,16 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import assets from "../assets/assets";
 
 function ThemeToggle({ theme, setTheme }) {
   useEffect(() => {
     const prefersDarkMode = window.matchMedia(
-      "(prefers-color-scheme : dark)",
+      "(prefers-color-scheme: dark)",
     ).matches;
-    setTheme(theme || (prefersDarkMode ? "dark" : "light"));
-  }, []);
+
+    if (!theme) {
+      setTheme(prefersDarkMode ? "dark" : "light");
+    }
+  }, [theme, setTheme]);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -15,29 +18,28 @@ function ThemeToggle({ theme, setTheme }) {
     } else {
       document.documentElement.classList.remove("dark");
     }
+
     localStorage.setItem("theme", theme);
   }, [theme]);
 
   return (
-    <>
-      <button>
-        {theme === "dark" ? (
-          <img
-            onClick={() => setTheme("light")}
-            className="size-8 p-1.5 border border-border-dark rounded-full"
-            src={assets.sun_icon}
-            alt=""
-          />
-        ) : (
-          <img
-            onClick={() => setTheme("dark")}
-            className="size-8 p-1.5 border border-border-dark rounded-full"
-            src={assets.moon_icon}
-            alt=""
-          />
-        )}
-      </button>
-    </>
+    <button>
+      {theme === "dark" ? (
+        <img
+          onClick={() => setTheme("light")}
+          className="size-8 rounded-full border border-border-dark p-1.5"
+          src={assets.sun_icon}
+          alt=""
+        />
+      ) : (
+        <img
+          onClick={() => setTheme("dark")}
+          className="size-8 rounded-full border border-border-dark p-1.5"
+          src={assets.moon_icon}
+          alt=""
+        />
+      )}
+    </button>
   );
 }
 

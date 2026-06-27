@@ -14,7 +14,7 @@ const menuItemClass = `
   hover:shadow-md
 `;
 
-function PackageCard({ title, packages, href }) {
+function PackageCard({ title, href }) {
   return (
     <Link to={href} className={menuItemClass}>
       <h3 className="font-medium dark:text-text-light">{title}</h3>

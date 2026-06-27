@@ -1,6 +1,7 @@
 import React from "react";
+import JobCard from "./JobCard";
 
-function JobGrid() {
+function JobGrid({jobs}) {
   return (
     <div className="mt-12 grid gap-6">
       {jobs.map((job) => (

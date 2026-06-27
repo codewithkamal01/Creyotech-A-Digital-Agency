@@ -13,8 +13,8 @@ function CareerHero() {
         </h1>
 
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-          We're looking for passionate people to help us create amazing digital
-          experiences.
+          We&apos;re looking for passionate people to help us create amazing
+          digital experiences.
         </p>
       </div>
     </section>

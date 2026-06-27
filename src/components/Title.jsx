@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import React from "react";
+import { motion } from "framer-motion";
 
 function Title({ title, desc }) {
   return (
@@ -16,7 +16,7 @@ function Title({ title, desc }) {
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay:0.2 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
         className="max-w-lg text-center text-text-secondary dark:text-text-light/75 mb-6"
       >

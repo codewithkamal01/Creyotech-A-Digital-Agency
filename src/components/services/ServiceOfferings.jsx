@@ -1,29 +1,21 @@
-import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { Check, ArrowRight } from "lucide-react";
+import { useState } from "react";
 
 function ServiceOfferings({ offerings }) {
   const location = useLocation();
+  
   const [active, setActive] = useState(() => {
     const matchedOffer = offerings.find(
-      (offer) => `#${offer.id}` === location.hash
+      (offer) => `#${offer.id}` === location.hash,
     );
 
     return matchedOffer || offerings[0] || {};
   });
 
-  useEffect(() => {
-    if (!location.hash) return;
-
-    const matchedOffer = offerings.find(
-      (offer) => `#${offer.id}` === location.hash
-    );
-
-    if (matchedOffer && matchedOffer.id !== active.id) {
-      setActive(matchedOffer);
-    }
-  }, [location.hash, offerings, active.id]);
+  const activeOffer =
+    offerings.find((offer) => `#${offer.id}` === location.hash) || active;
 
   return (
     <section className="px-4 py-24 sm:px-8 lg:px-16 xl:px-24">
@@ -60,7 +52,7 @@ function ServiceOfferings({ offerings }) {
                     transition-all
 
                     ${
-                      active.id === item.id
+                      activeOffer.id === item.id
                         ? "border-primary bg-primary/5"
                         : "border-border-light hover:border-primary/20"
                     }
@@ -68,7 +60,9 @@ function ServiceOfferings({ offerings }) {
                 >
                   <h3 className="font-semibold">{item.title}</h3>
 
-                  <p className="mt-2 text-sm text-text-secondary">{item.badge}</p>
+                  <p className="mt-2 text-sm text-text-secondary">
+                    {item.badge}
+                  </p>
                 </button>
               </div>
             ))}
@@ -78,7 +72,7 @@ function ServiceOfferings({ offerings }) {
 
           <AnimatePresence mode="wait">
             <motion.div
-              key={active.id}
+              key={activeOffer.id}
               initial={{
                 opacity: 0,
                 x: 20,
@@ -115,13 +109,15 @@ function ServiceOfferings({ offerings }) {
                   text-primary
                 "
               >
-                {active.badge}
+                {activeOffer.badge}
               </span>
 
-              <h3 className="mt-5 text-3xl font-bold dark:text-text-light">{active.title}</h3>
+              <h3 className="mt-5 text-3xl font-bold dark:text-text-light">
+                {activeOffer.title}
+              </h3>
 
               <p className="mt-4 max-w-3xl text-text-secondary">
-                {active.description}
+                {activeOffer.description}
               </p>
 
               <div className="mt-10 grid gap-8 md:grid-cols-2">
@@ -131,7 +127,7 @@ function ServiceOfferings({ offerings }) {
                   <h4 className="mb-4 text-lg font-semibold">Ideal For</h4>
 
                   <div className="space-y-3">
-                    {active.idealFor?.map((item) => (
+                    {activeOffer.idealFor?.map((item) => (
                       <div key={item} className="flex items-center gap-3">
                         <Check size={18} className="text-primary" />
 
@@ -147,7 +143,7 @@ function ServiceOfferings({ offerings }) {
                   <h4 className="mb-4 text-lg font-semibold">Key Features</h4>
 
                   <div className="space-y-3">
-                    {active.features?.map((item) => (
+                    {activeOffer.features?.map((item) => (
                       <div key={item} className="flex items-center gap-3">
                         <Check size={18} className="text-primary" />
 

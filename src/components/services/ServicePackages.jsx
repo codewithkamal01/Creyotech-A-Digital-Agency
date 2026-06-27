@@ -24,9 +24,7 @@ import {
 } from "lucide-react";
 
 function ServicePackages({ data }) {
-  if (!data || !data.plans || data.plans.length === 0) {
-    return null;
-  }
+  const location = useLocation();
 
   const [active, setActive] = useState(data.plans[0]);
 
@@ -107,25 +105,23 @@ function ServicePackages({ data }) {
     },
   };
 
-  const location = useLocation();
+  const activePackage =
+    data.plans.find((plan) => plan.id === location.hash.replace("#", "")) ||
+    active;
+
   useEffect(() => {
     if (!location.hash) return;
 
-    const packageId = location.hash.replace("#", "");
-
-    const matchedPackage = data.plans.find((plan) => plan.id === packageId);
-
-    if (matchedPackage) {
-      setActive(matchedPackage);
-
-      setTimeout(() => {
-        document.getElementById("packages")?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }, 100);
-    }
-  }, [location.hash, data.plans]);
+    setTimeout(() => {
+      document.getElementById("packages")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 100);
+  }, [location.hash]);
+  if (!data || !data.plans || data.plans.length === 0) {
+    return null;
+  }
 
   return (
     <section
@@ -367,11 +363,11 @@ function ServicePackages({ data }) {
               text-white
             "
                       >
-                        {active.badge}
+                        {activePackage.badge}
                       </span>
                     )}
 
-                    {active.support && (
+                    {activePackage.support && (
                       <span
                         className="
     inline-flex
@@ -389,7 +385,7 @@ function ServicePackages({ data }) {
   "
                       >
                         <ShieldCheck size={14} />
-                        {active.support}
+                        {activePackage.support}
                       </span>
                     )}
                   </div>
@@ -406,7 +402,7 @@ function ServicePackages({ data }) {
           dark:text-text-light
         "
                   >
-                    {active.name}
+                    {activePackage.name}
                   </h3>
 
                   {/* Description */}
@@ -671,7 +667,7 @@ function ServicePackages({ data }) {
                   Ready to get started?
                 </h3>
                 <p className="text-text-secondary">
-                  Let's discuss how {active.name} can drive your growth
+                  Let&apos;s discuss how {active.name} can drive your growth
                 </p>
               </div>
               <motion.a
