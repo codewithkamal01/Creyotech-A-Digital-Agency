@@ -124,6 +124,7 @@ export const company_logos = [
   godaddy,
   spyfu,
   yoast,
+  moz,
 ];
 
 export const clg_logos = [
@@ -132,6 +133,7 @@ export const clg_logos = [
   clg3,
   clg4,
   clg5,
+  clg6,
   clg7,
   clg8,
   clg9,

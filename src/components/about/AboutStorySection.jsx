@@ -56,7 +56,6 @@ export default function AboutStorySection() {
                 sm:p-8
               "
             >
-
               {/* Title */}
               <h2
                 className="

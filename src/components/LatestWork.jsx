@@ -2,7 +2,7 @@ import React from "react";
 import assets from "../assets/assets";
 import Title from "./Title";
 import WorkCard from "./WorkCard";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 function LatestWork() {
   const worksData = [

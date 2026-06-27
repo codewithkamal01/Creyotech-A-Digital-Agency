@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { MapPin, Phone, Mail } from "lucide-react";
 import assets from "../assets/assets";
 import footerImage from "../assets/gallery/gallery8.webp";

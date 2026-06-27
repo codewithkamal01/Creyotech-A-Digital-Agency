@@ -9,7 +9,7 @@ import {
 } from "react-icons/fi";
 import { HiOutlineBriefcase } from "react-icons/hi";
 import toast from "react-hot-toast";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import ServiceCarousel from "./home/ServiceCarousel";
 
 function ContactForm() {
