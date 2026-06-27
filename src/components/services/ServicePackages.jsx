@@ -227,7 +227,7 @@ function ServicePackages({ data }) {
     "
           >
             {data.plans.map((plan) => {
-              const isActive = active.id === plan.id;
+              const isActive = activePackage.id === plan.id;
 
               return (
                 <motion.button
