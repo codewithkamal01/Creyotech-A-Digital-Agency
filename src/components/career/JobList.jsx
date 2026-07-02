@@ -15,7 +15,7 @@ function JobList({ jobs }) {
             delay: index * 0.1,
           }}
         >
-          <JobCard jobs={job} />
+          <JobCard job={job} />
         </motion.div>
       ))}
     </div>
