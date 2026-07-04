@@ -20,7 +20,7 @@ function SpecialityCard() {
       desc: "Focused on long-term business impact, transparency, and measurable results.",
     },
     {
-      title: "Maintain Quality",
+      title: "Consistent Quality",
       icon: <BadgeCheck size={28} />,
       desc: "Strict quality standards and testing processes for reliable digital experiences.",
     },

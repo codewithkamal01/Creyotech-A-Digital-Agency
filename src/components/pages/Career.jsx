@@ -6,6 +6,7 @@ import JobList from "../career/JobList";
 import EmptyState from "../career/EmptyState";
 
 import { jobs } from "../../data/jobs";
+import FAQ from "../home/FAQ";
 
 export default function Career() {
   const [search, setSearch] = useState("");
@@ -68,12 +69,15 @@ export default function Career() {
           locations={locations}
           jobTypes={jobTypes}
         />
-        <div className="mt-12">
+        <div className="mt-12 mb-15">
           {filteredJobs.length ? (
             <JobList jobs={filteredJobs} />
           ) : (
             <EmptyState />
           )}
+        </div>
+        <div className="border-t border-slate-200">
+          <FAQ />
         </div>
       </section>
     </main>

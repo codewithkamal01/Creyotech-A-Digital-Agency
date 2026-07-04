@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import assets from "../../assets/assets";
 
-
 const recognitionData = [
   {
     image: assets.msme,
@@ -26,6 +25,14 @@ const recognitionData = [
   {
     image: assets.cmmi,
     title: "CMMI Level 3 Process Excellence",
+  },
+  {
+    image: assets.StartUpIndia,
+    title: "StartUp India Recognized",
+  },
+  {
+    image: assets.MakeInIndia,
+    title: "Make in India Recognized",
   },
 ];
 
@@ -158,7 +165,7 @@ function GovernmentRecognition() {
             gap-6
             sm:grid-cols-2
             lg:grid-cols-3
-            xl:grid-cols-6
+            xl:grid-cols-[repeat(auto-fit,minmax(220px,1fr))]
           "
         >
           {recognitionData.map((item, index) => (

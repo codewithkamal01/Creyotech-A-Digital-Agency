@@ -10,11 +10,13 @@ import EngagementModels from "../home/EngagementModels";
 import SpecialityCard from "../home/SpecialityCard";
 import BuiltInAssurances from "../home/BuiltInAssurances";
 import TechnologyStack from "../home/TechnologyStack";
+import AnimatedParagraph from "../home/AnimatedParagraph";
 
 function Home() {
   return (
     <>
       <Hero />
+      <AnimatedParagraph/>
       <TrustedBy
         badge="Trusted Worldwide"
         title="Trusted by Leading Companies"

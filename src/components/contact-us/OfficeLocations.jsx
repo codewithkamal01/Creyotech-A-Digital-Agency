@@ -15,7 +15,7 @@ const locations = [
   {
     title: "Ahmedabad Branch",
     address:
-      "554 Iscon Elegance, Nr. Shapath 5, Prahladnagar Cross Roads, Sarkhej–Gandhinagar Hwy, Ahmedabad, Gujarat 380015",
+      "Zion Z1, Sindhu Bhavan Marg, Nr. Maple Country Road, Bodakdev, Ahmedabad, Gujarat 380059",
   },
   {
     title: "Pune Branch",

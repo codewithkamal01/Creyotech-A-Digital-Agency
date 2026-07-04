@@ -10,6 +10,8 @@ import Teams from "../about/Teams";
 import JourneyHero from "../about/JourneyHero";
 import StatsSection from "../about/StatsSection";
 import AnimatedGallery from "../about/AnimatedGallery";
+import FAQ from "../home/FAQ";
+import CreyotechMethod from "../about/CreyotechMethod";
 
 function AboutUs() {
   return (
@@ -18,6 +20,7 @@ function AboutUs() {
       <AboutStorySection />
       <StatsSection />
       <CareerOpportunities />
+      <CreyotechMethod/>
       <GovernmentRecognition />
       <ProcessTimeline />
       <CampusCollab />
@@ -25,6 +28,7 @@ function AboutUs() {
       <CustomerReviewsSection />
       <Teams />
       <AnimatedGallery />
+      <FAQ/>
     </>
   );
 }

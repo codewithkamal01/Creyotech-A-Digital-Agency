@@ -107,8 +107,7 @@ function Footer() {
               </div>
 
               <p className="leading-7">
-                Module 232, SDF Building, Sector V, Bidhannagar, Kolkata, West
-                Bengal 700091
+               <span className="font-semibold">Zion Z1</span>, Sindhu Bhavan Marg, nr. Maple Country Road, Bodakdev, Ahmedabad, Gujarat 380059
               </p>
             </div>
 
