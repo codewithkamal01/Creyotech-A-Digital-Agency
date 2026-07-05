@@ -11,6 +11,7 @@ import SpecialityCard from "../home/SpecialityCard";
 import BuiltInAssurances from "../home/BuiltInAssurances";
 import TechnologyStack from "../home/TechnologyStack";
 import AnimatedParagraph from "../home/AnimatedParagraph";
+import IndustriesSection from "../home/IndustriesSection";
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
       />
       <SpecialityCard />
       <Services />
+      <IndustriesSection/>
       <BuiltInAssurances />
       <LatestWork />
       <EngagementModels />

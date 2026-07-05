@@ -12,6 +12,7 @@ import StatsSection from "../about/StatsSection";
 import AnimatedGallery from "../about/AnimatedGallery";
 import FAQ from "../home/FAQ";
 import CreyotechMethod from "../about/CreyotechMethod";
+import CredentialsSection from "../about/CredentialsSection";
 
 function AboutUs() {
   return (
@@ -22,6 +23,7 @@ function AboutUs() {
       <CareerOpportunities />
       <CreyotechMethod/>
       <GovernmentRecognition />
+      <CredentialsSection/>
       <ProcessTimeline />
       <CampusCollab />
       <ProcessSection />

@@ -6,6 +6,7 @@ import NavLinks from "./NavLinks";
 import NavbarCTA from "./NavbarCTA";
 import MobileSidebar from "./MobileSidebar";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar({ theme, setTheme }) {
   const [sideBarOpen, setSideBarOpen] = useState(false);
@@ -44,13 +45,17 @@ function Navbar({ theme, setTheme }) {
       "
     >
       {/* Logo */}
-      <div className="flex items-center gap-1 font-bold">
+      <Link
+        to="/"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="flex items-center gap-1 font-bold"
+      >
         <img
           src={theme === "dark" ? assets.Creyotech_dark : assets.Creyotech}
           className="w-26 sm:w-28 rounded"
           alt=""
         />
-      </div>
+      </Link>
 
       {/* Nav Container */}
       <div

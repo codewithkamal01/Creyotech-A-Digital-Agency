@@ -9,12 +9,14 @@ import WebDevelopment from "./components/pages/services/WebDevelopment";
 import DigitalMarketing from "./components/pages/services/DigitalMarketing";
 import SocialMediaMarketing from "./components/pages/services/SocialMediaMarketing";
 import { Toaster } from "react-hot-toast";
+import ProposalSidebar from "./components/ProposalSidebar";
 
 function App() {
   return (
     <BrowserRouter>
       <Toaster position="top-right" />
       <ScrollToTop />
+      <ProposalSidebar/>
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />

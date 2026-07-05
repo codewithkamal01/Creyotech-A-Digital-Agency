@@ -15,18 +15,6 @@ const recognitionData = [
     title: "NSIC-Registered IT Services Provider",
   },
   {
-    image: assets.iso,
-    title: "ISO 9001:2015 Quality Certified",
-  },
-  {
-    image: assets.iso2,
-    title: "ISO 27001 Information Security Certified",
-  },
-  {
-    image: assets.cmmi,
-    title: "CMMI Level 3 Process Excellence",
-  },
-  {
     image: assets.StartUpIndia,
     title: "StartUp India Recognized",
   },
@@ -140,7 +128,7 @@ function GovernmentRecognition() {
               sm:text-5xl
             "
           >
-            Trusted Certifications & Official Recognition
+            Official Registrations & Recognition
           </h2>
 
           <p
@@ -148,7 +136,7 @@ function GovernmentRecognition() {
               mt-5
               max-w-2xl
               text-sm
-              leading-8
+              leading-7
               text-text-secondary dark:text-white/70
               sm:text-base
             "
@@ -165,7 +153,7 @@ function GovernmentRecognition() {
             gap-6
             sm:grid-cols-2
             lg:grid-cols-3
-            xl:grid-cols-[repeat(auto-fit,minmax(220px,1fr))]
+            xl:grid-cols-5
           "
         >
           {recognitionData.map((item, index) => (

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import assets from "../../assets/assets";
 
 export default function AboutStorySection() {
