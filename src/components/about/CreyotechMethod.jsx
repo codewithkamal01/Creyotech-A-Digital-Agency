@@ -146,7 +146,7 @@ function CreyotechMethod() {
                     </h3>
                   </div>
 
-                  <p className="mt-4 text-sm leading-8 text-text-secondary dark:text-white/70">
+                  <p className="mt-4 text-sm leading-7 text-text-secondary dark:text-white/70">
                     {item.description}
                   </p>
                 </div>
