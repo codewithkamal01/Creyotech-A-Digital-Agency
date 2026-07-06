@@ -94,6 +94,7 @@ import heroVideo from "./Home/digital-agency-kolkata-hero-v02.webm";
 import webapp from "./services/web-development.jpg";
 import digitalmarketing from "./services/digital-marketing.jpg";
 import socialmedia from "./services/social-media-marketing.jpg";
+import supportAgent from "./support.jpg";
 
 export const service_images = {
   webapp,
@@ -155,6 +156,7 @@ export const cust_reviews = [
 export const timeLine = [tl1, tl2, tl3, tl4];
 
 const assets = {
+  supportAgent,
   heroVideo,
   tl1,
   tl2,
