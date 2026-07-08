@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Check,
@@ -25,11 +25,21 @@ import {
 
 function ServicePackages({ data }) {
   const location = useLocation();
+  const navigate = useNavigate();
+  const ignoreScrollRef = useRef(false);
 
-  const [active, setActive] = useState(data.plans[0]);
+  const hashId = location.hash.replace("#", "");
+  const activePlanId =
+    data?.plans?.some((plan) => plan.id === hashId) ? hashId : data?.plans?.[0]?.id ?? null;
+
+  const active =
+    data?.plans?.find((plan) => plan.id === activePlanId) || data?.plans?.[0] || null;
+  const activePackage = active;
 
   // Dynamically determine which sections to show based on active plan
   const getSections = () => {
+    if (!active) return [];
+
     const sectionMap = {
       "Ideal For": active.idealFor,
       "Core Services": active.coreServices,
@@ -105,20 +115,35 @@ function ServicePackages({ data }) {
     },
   };
 
-  const activePackage =
-    data.plans.find((plan) => plan.id === location.hash.replace("#", "")) ||
-    active;
-
   useEffect(() => {
     if (!location.hash) return;
 
-    setTimeout(() => {
+    const hashId = location.hash.replace("#", "");
+    const isPackageHash = data?.plans?.some((plan) => plan.id === hashId);
+
+    if (isPackageHash) {
+      if (ignoreScrollRef.current) {
+        ignoreScrollRef.current = false;
+        return;
+      }
+
+      requestAnimationFrame(() => {
+        document.getElementById("packages")?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+      return;
+    }
+
+    requestAnimationFrame(() => {
       document.getElementById("packages")?.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
-    }, 100);
-  }, [location.hash]);
+    });
+  }, [data?.plans, location.hash]);
+
   if (!data || !data.plans || data.plans.length === 0) {
     return null;
   }
@@ -126,7 +151,7 @@ function ServicePackages({ data }) {
   return (
     <section
       id="packages"
-      className="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-24 bg-gradient-to-b from-transparent via-primary/5 to-transparent overflow-hidden"
+      className="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-24 bg-linear-to-b from-transparent via-primary/5 to-transparent overflow-hidden"
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -233,13 +258,20 @@ function ServicePackages({ data }) {
                 <motion.button
                   key={plan.id}
                   onClick={() => {
-                    setActive(plan);
-                    window.history.replaceState(null, "", `#${plan.id}`);
+                    ignoreScrollRef.current = true;
+                    navigate(
+                      {
+                        pathname: location.pathname,
+                        search: location.search,
+                        hash: plan.id,
+                      },
+                      { replace: true }
+                    );
                   }}
                   whileTap={{ scale: 0.98 }}
                   className={`
             relative
-            min-w-[180px]
+            min-w-45
             rounded-2xl
             px-5
             py-4
@@ -660,7 +692,7 @@ function ServicePackages({ data }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="mt-12 p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/30 dark:border-primary/40 flex flex-col sm:flex-row items-center justify-between gap-6"
+              className="mt-12 p-8 sm:p-10 rounded-3xl bg-linear-to-r from-primary/10 to-primary/5 border border-primary/30 dark:border-primary/40 flex flex-col sm:flex-row items-center justify-between gap-6"
             >
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2 dark:text-text-light">
@@ -674,7 +706,7 @@ function ServicePackages({ data }) {
                 href="/contact-us"
                 whileHover={{ scale: 1.05, x: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex-shrink-0 px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/40 transition-all duration-300 flex items-center gap-2 group"
+                className="shrink-0 px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/40 transition-all duration-300 flex items-center gap-2 group"
               >
                 <span>Get Started</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

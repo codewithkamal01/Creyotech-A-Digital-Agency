@@ -50,12 +50,12 @@ function NavDropdown({
               rounded-3xl
               border
               border-black/5
-              bg-white/90
+              bg-white
               p-8
               shadow-[0_20px_80px_rgba(0,0,0,0.08)]
               backdrop-blur-2xl
               dark:border-white/10
-              dark:bg-secondary/95
+              dark:bg-secondary
             `}
           >
             {children}

@@ -144,7 +144,7 @@ dark:bg-bg-dark
 
         <div className="mt-2 flex items-center gap-2 text-[11px]">
           <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
-          Usually replies within 30 minutes
+          Active
         </div>
       </div>
 

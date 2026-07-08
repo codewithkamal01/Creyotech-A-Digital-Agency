@@ -76,6 +76,8 @@ function Teams() {
                 {/* Image */}
                 <img
                   src={team.image}
+                  loading="lazy"
+                  decoding="async"
                   className="
               h-28
               w-28

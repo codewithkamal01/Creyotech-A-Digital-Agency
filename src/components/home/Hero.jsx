@@ -12,7 +12,7 @@ function Hero() {
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src={assets.heroVideo} type="video/webm" />
@@ -33,6 +33,8 @@ function Hero() {
           <img
             src={assets.group_profile}
             alt="Clients"
+            loading="lazy"
+            decoding="async"
             className="h-7 w-auto sm:h-8"
           />
           <p className="pr-2 text-xs font-medium sm:text-sm">

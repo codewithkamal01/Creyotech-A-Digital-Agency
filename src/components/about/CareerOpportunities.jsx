@@ -177,6 +177,8 @@ function CareerOpportunities() {
               <img
                 src={careerImg}
                 alt="Career Opportunities"
+                loading="lazy"
+                decoding="async"
                 className="
                 h-[430px]
                   sm:h-[550px]

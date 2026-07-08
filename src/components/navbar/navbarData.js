@@ -1,6 +1,7 @@
 export const serviceSections = [
   {
     title: "Web Development",
+    href: "/services/web-development",
     description:
       "Scalable websites, web applications, and custom business systems.",
     items: [
@@ -25,6 +26,7 @@ export const serviceSections = [
 
   {
     title: "Digital Marketing",
+    href: "/services/digital-marketing",
     description:
       "SEO, GEO, lead generation, and growth-focused marketing systems.",
     items: [
@@ -45,6 +47,7 @@ export const serviceSections = [
 
   {
     title: "Social Media Marketing",
+    href: "/services/social-media-marketing",
     description:
       "Content, paid advertising, influencer campaigns, and audience growth.",
     items: [

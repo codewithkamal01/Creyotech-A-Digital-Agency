@@ -26,8 +26,7 @@ const timelineData = [
     year: "2022",
     month: "April 2022",
     title: "Ecommerce Products & Partnerships",
-    cardTitle:
-      "Ecommerce Product Development & Partnerships",
+    cardTitle: "Ecommerce Product Development & Partnerships",
     description:
       "Creyotech integrated branding, SEO operations, UI/UX design, and digital growth services.",
     image: timeLine[2],
@@ -237,6 +236,8 @@ function CompanyTimeline() {
                         <img
                           src={item.image}
                           alt={item.cardTitle}
+                          loading="lazy"
+                          decoding="async"
                           className="
                             h-[280px]
                             w-full

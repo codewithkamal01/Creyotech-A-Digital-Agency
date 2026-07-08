@@ -26,6 +26,8 @@ function WorkCard({ work, index }) {
         <img
           src={work.image}
           alt={work.title}
+          loading="lazy"
+          decoding="async"
           className="
             h-44
             w-full

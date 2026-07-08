@@ -18,6 +18,7 @@ function NavLinks({ activeMenu, setActiveMenu }) {
             <MegaMenuSection
               key={section.title}
               title={section.title}
+              link={section.href}
               items={section.items}
             />
           ))}

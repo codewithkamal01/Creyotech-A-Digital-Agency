@@ -61,35 +61,24 @@ function ChatWidget() {
               bottom-28
               left-6
               z-40
-
               flex
               items-center
               gap-3
-
               rounded-full
               border
               border-border-light
               bg-white
               px-4
               py-3
-
               shadow-2xl
-
               max-sm:left-1/2
               max-sm:bottom-4
               max-sm:-translate-x-1/2
               max-sm:w-[calc(100vw-32px)]
-
               dark:border-border-dark
               dark:bg-bg-dark
             "
           >
-            <img
-              src={assets.supportAgent}
-              alt="Support"
-              className="h-11 w-11 rounded-full object-cover"
-            />
-
             <div>
               <p className="text-sm font-semibold text-text-primary dark:text-white">
                 Need help?
@@ -122,35 +111,25 @@ function ChatWidget() {
         aria-label="Open chat"
         className="
           fixed
-
           bottom-6
           left-6
-
           z-50
-
           h-16
           w-16
-
           overflow-hidden
-
           rounded-full
-
           border-4
-
           border-white
-
           bg-white
-
           shadow-[0_15px_40px_rgba(80,68,229,0.35)]
-
           dark:border-slate-700
         "
       >
-        {/* Replace with your support image */}
-
         <img
           src={assets.supportAgent}
           alt="Support"
+          loading="lazy"
+          decoding="async"
           className="
             h-full
             w-full
@@ -163,18 +142,13 @@ function ChatWidget() {
         <span
           className="
             absolute
-
             bottom-1
             right-1
-
             h-4
             w-4
-
             rounded-full
-
             border-2
             border-white
-
             bg-green-500
           "
         />
@@ -184,17 +158,12 @@ function ChatWidget() {
         <span
           className="
             absolute
-
             bottom-1
             right-1
-
             h-4
             w-4
-
             animate-ping
-
             rounded-full
-
             bg-green-500/60
           "
         />

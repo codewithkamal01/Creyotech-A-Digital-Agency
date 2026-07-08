@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MapPin, Phone, Mail } from "lucide-react";
 import assets from "../assets/assets";
 import footerImage from "../assets/gallery/gallery8.webp";
+import FloatingContact from "./FloatingContact";
 
 function Footer() {
   const socialLinks = [
@@ -51,6 +52,8 @@ function Footer() {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/75 backdrop-blur-[2px]" />
+      {/* floating contact */}
+      <FloatingContact />
 
       {/* Content */}
       <div className="relative z-10 px-6 py-10 sm:px-10 lg:px-20 xl:px-32">
@@ -66,8 +69,9 @@ function Footer() {
             <img
               src={assets.Creyotech_dark}
               alt="Creyotech"
-              className="mb-6 w-32 sm:w-40 rounded-md"
               loading="lazy"
+              decoding="async"
+              className="mb-6 w-32 sm:w-40 rounded-md"
             />
 
             <p className="mb-8 leading-7 text-white/80">
@@ -105,10 +109,19 @@ function Footer() {
               <div className="rounded-xl bg-primary/15 p-3 text-primary">
                 <MapPin size={18} />
               </div>
-
-              <p className="leading-7">
-               <span className="font-semibold">Zion Z1</span>, Sindhu Bhavan Marg, nr. Maple Country Road, Bodakdev, Ahmedabad, Gujarat 380059
-              </p>
+              <div className="flex flex-col gap-2">
+                <p>
+                  Module 232, SDF Building, EP &, GP Block, Sector V,
+                  Bidhannagar, Kolkata, West Bengal 700091
+                </p>
+                <p className="leading-7">
+                  <span className="font-semibold text-blue-500">
+                    New Office Address
+                  </span>{" "}
+                  <br /> Zion Z1, Sindhu Bhavan Marg, Near Maple Country Road,
+                  Bodakdev, Ahmedabad, Gujarat 380059
+                </p>
+              </div>
             </div>
 
             <div className="flex items-center gap-4">

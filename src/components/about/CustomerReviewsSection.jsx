@@ -254,6 +254,8 @@ function CustomerReviewsSection() {
                 <img
                   src={item.logo}
                   alt="review platform"
+                  loading="lazy"
+                  decoding="async"
                   className="
                     max-h-30
                     w-auto

@@ -95,6 +95,8 @@ function ServiceHero({ hero }) {
           <img
             src={hero.image}
             alt={hero.title}
+            loading="lazy"
+            decoding="async"
             className="
   w-full
   max-w-[450px]

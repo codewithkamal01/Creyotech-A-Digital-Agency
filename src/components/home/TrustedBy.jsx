@@ -157,6 +157,8 @@ function TrustedBy({
               <img
                 src={logo}
                 alt="logo"
+                loading="lazy"
+                decoding="async"
                 className={`
                   ${logoHeight}
                   w-auto

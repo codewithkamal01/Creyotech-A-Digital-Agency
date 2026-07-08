@@ -54,6 +54,8 @@ function Navbar({ theme, setTheme }) {
           src={theme === "dark" ? assets.Creyotech_dark : assets.Creyotech}
           className="w-26 sm:w-28 rounded"
           alt=""
+          loading="lazy"
+          decoding="async"
         />
       </Link>
 

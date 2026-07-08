@@ -230,6 +230,8 @@ function GalleryCard({ image, height }) {
       <img
         src={image}
         alt="gallery"
+        loading="lazy"
+        decoding="async"
         className={`
           ${height}
           w-full

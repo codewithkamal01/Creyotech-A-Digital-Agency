@@ -24,13 +24,15 @@ function JourneyHero() {
           <img
             src={assets.AboutHero}
             alt="Our Journey"
+            loading="eager"
+            fetchPriority="high"
             className="
     h-[300px]
     w-full
-    object-cover
+    object-cover  
     sm:h-[380px]
     lg:h-[500px]
-    xl:h-[560px]
+    xl:h-screen
   "
           />
 

@@ -143,6 +143,8 @@ export default function AboutStorySection() {
               <img
                 src={assets.formation}
                 alt="About Creyotech"
+                loading="lazy"
+                decoding="async"
                 className="
                   h-[350px]
                   w-full
