@@ -90,7 +90,18 @@ function IndustriesSection() {
           We build scalable digital systems across industries, combining
           strategy, automation, and modern technology.
         </p>
+        
       </div>
+      <motion.div
+        animate={{ x: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 1.8 }}
+        className="mb-8 flex items-center justify-center gap-3"
+      >
+        <div className="h-2 w-2 rounded-full bg-primary" />
+        <p className="text-sm font-bold tracking-wide text-text-secondary dark:text-white/60">
+          Drag to explore →
+        </p>
+      </motion.div>
 
       {/* Draggable Cards */}
       <motion.div

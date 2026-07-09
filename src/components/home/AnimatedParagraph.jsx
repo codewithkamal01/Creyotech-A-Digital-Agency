@@ -1,31 +1,32 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 
-const text =
-  "At Creyotech, we design and build custom digital solutions to help you move faster, work smarter, and grow confidently.";
+const lines = [
+  "At Creyotech, we design and",
+  "build custom digital solutions",
+  "to help you move faster, work",
+  "smarter, and grow confidently.",
+];
 
-const highlightWords = ["custom", "digital", "faster,", "smarter,", "grow"];
+const lineColors = [
+  // Ocean Blue
+  "bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent",
 
-function Word({ word, progress, range }) {
-  const opacity = useTransform(progress, range, [0.18, 1]);
+  // Blue → Emerald
+  "bg-gradient-to-r from-blue-500 to-emerald-400 bg-clip-text text-transparent",
 
-  return (
-    <motion.span
-      style={{ opacity }}
-      className={`inline-block mr-3 transition-colors ${
-        highlightWords.includes(word)
-          ? "bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent"
-          : ""
-      }`}
-    >
-      {word}
-    </motion.span>
-  );
-}
+  // Emerald
+  "bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 bg-clip-text text-transparent",
+
+  // Green → Yellow
+  "bg-gradient-to-r from-green-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent",
+
+  // Golden Yellow
+  "bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-400 bg-clip-text text-transparent",
+];
 
 function AnimatedParagraph() {
   const ref = useRef(null);
-  const words = text.split(" ");
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -37,21 +38,28 @@ function AnimatedParagraph() {
       ref={ref}
       className="min-h-[60vh] flex items-center justify-center px-6 py-24"
     >
-      <p className="max-w-4xl text-center text-2xl md:text-5xl leading-[1.5] font-bold tracking-tight dark:text-white">
-        {words.map((word, index) => {
-          const start = index / words.length;
-          const end = start + 0.18;
+      <div className="max-w-5xl text-center text-6xl md:text-6xl font-bold leading-[1.5] tracking-tight">
+        {lines.map((line, index) => {
+          const start = index / lines.length;
+          const end = start + 0.25;
+
+          const opacity = useTransform(
+            scrollYProgress,
+            [start, end],
+            [0.18, 1],
+          );
 
           return (
-            <Word
+            <motion.div
               key={index}
-              word={word}
-              progress={scrollYProgress}
-              range={[start, end]}
-            />
+              style={{ opacity }}
+              className={lineColors[index]}
+            >
+              {line}
+            </motion.div>
           );
         })}
-      </p>
+      </div>
     </section>
   );
 }

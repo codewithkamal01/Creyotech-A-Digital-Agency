@@ -56,14 +56,15 @@ function Hero() {
           <span className="mt-2 block min-h-[1.2em] text-primary">
             <TypeAnimation
               sequence={[
-                "Innovative Marketer",
+                "Innovative Marketing",
                 2000,
-                "Brand Strategist",
+                "Brand Strategy",
                 2000,
-                "Creative Partner",
+                "Trendsetting Creatives",
                 2000,
-                "Trendsetting Creator",
+                "AI Powered Digital Excellence",
                 2000,
+                "Smart Tech Innovations",
               ]}
               speed={60}
               repeat={Infinity}
