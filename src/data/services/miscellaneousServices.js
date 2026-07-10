@@ -1,129 +1,184 @@
+import {
+  Mail,
+  MessageSquare,
+  MessagesSquare,
+  PhoneCall,
+  Briefcase,
+  Building2,
+  Hotel,
+  GraduationCap,
+  Users,
+  LayoutDashboard,
+} from "lucide-react";
+
 export const miscellaneousServices = [
   {
     id: "bulk-sms",
-    title: "Bulk SMS",
+    icon: MessageSquare,
+    iconBg: "from-blue-500 to-cyan-500",
+    title: "Bulk SMS Solutions",
     description:
-      "Reach thousands of customers instantly with promotional, transactional, OTP, and notification SMS services.",
+      "Reach your customers instantly with reliable bulk SMS services for promotions, OTP verification, transactional alerts, appointment reminders, and business notifications with high delivery rates.",
     features: [
       "Promotional SMS",
       "Transactional SMS",
-      "OTP SMS",
-      "API Integration",
+      "OTP Verification",
+      "Sender ID Registration",
       "Delivery Reports",
+      "REST API Integration",
     ],
   },
+
   {
     id: "bulk-email-marketing",
+    icon: MessagesSquare,
+    iconBg: "from-purple-500 to-pink-500",
     title: "Bulk Email Marketing",
     description:
-      "Run high-converting email campaigns with professional templates, automation, and detailed analytics.",
+      "Launch targeted email campaigns that engage customers, increase conversions, and strengthen your brand with professional templates and marketing automation.",
     features: [
       "Newsletter Campaigns",
       "Email Automation",
       "Audience Segmentation",
-      "Analytics",
       "SMTP Integration",
+      "Campaign Analytics",
+      "Responsive Templates",
     ],
   },
+
   {
     id: "rcs-messaging",
-    title: "RCS Messaging",
+    icon: MessagesSquare,
+    iconBg: "from-purple-500 to-pink-500",
+    title: "RCS Business Messaging",
     description:
-      "Upgrade customer communication with rich messaging including images, buttons, videos, and branding.",
+      "Enhance customer engagement with rich communication services featuring branded messaging, interactive buttons, media sharing, and real-time conversations.",
     features: [
-      "Rich Media",
-      "Verified Business",
-      "Quick Reply Buttons",
+      "Verified Business Profile",
+      "Rich Media Messages",
+      "Interactive Buttons",
+      "Read Receipts",
       "Campaign Analytics",
+      "API Integration",
     ],
   },
+
   {
     id: "call-whatsapp-api",
+    icon: PhoneCall,
+    iconBg: "from-green-500 to-emerald-500",
     title: "Call & WhatsApp API",
     description:
-      "Automate customer engagement through WhatsApp Business API, voice calls, notifications, and chatbots.",
+      "Automate customer communication using WhatsApp Business API and cloud telephony to provide instant support, notifications, and seamless engagement.",
     features: [
-      "WhatsApp API",
+      "WhatsApp Business API",
       "Voice Calling",
-      "Chatbots",
-      "Automation",
+      "Chatbot Automation",
+      "Broadcast Messaging",
       "CRM Integration",
+      "Real-time Notifications",
     ],
   },
+
   {
     id: "professional-email",
+    icon: Mail,
+    iconBg: "from-sky-500 to-blue-600",
     title: "Professional Business Email",
     description:
-      "Build trust with branded business email addresses using your own domain.",
+      "Build credibility with secure business email addresses using your own domain while ensuring reliable communication and enterprise-grade security.",
     features: [
-      "Domain Email",
-      "Spam Protection",
-      "Secure Access",
-      "Mobile Support",
+      "Custom Domain Email",
+      "Spam & Virus Protection",
+      "Secure Webmail Access",
+      "Mobile & Desktop Sync",
+      "Large Mail Storage",
+      "Business Email Migration",
     ],
   },
+
   {
     id: "google-workspace",
+    icon: Briefcase,
+    iconBg: "from-yellow-400 to-orange-500",
     title: "Google Workspace",
     description:
-      "Deploy Gmail, Drive, Meet, Calendar, Docs, and collaboration tools for your organization.",
+      "Empower your team with Google's productivity suite including Gmail, Drive, Meet, Calendar, Docs, Sheets, and enterprise collaboration tools.",
     features: [
       "Business Gmail",
       "Google Drive",
-      "Meet",
-      "Docs",
+      "Google Meet",
+      "Shared Calendar",
+      "Docs, Sheets & Slides",
       "Admin Console",
     ],
   },
+
   {
     id: "karobarone",
-    title: "KarobarOne",
+    icon: LayoutDashboard,
+    iconBg: "from-indigo-500 to-violet-600",
+    title: "KarobarOne Business Suite",
     description:
-      "Complete digital business platform to simplify customer management and daily operations.",
+      "Manage your business operations from one powerful platform with tools for customer management, workflow automation, sales tracking, and reporting.",
     features: [
       "Business Dashboard",
       "Lead Management",
-      "Reports",
-      "Automation",
+      "Sales Tracking",
+      "Workflow Automation",
+      "Performance Reports",
+      "Customer Database",
     ],
   },
+
   {
     id: "creyotech-crm",
+    icon: Users,
+    iconBg: "from-pink-500 to-rose-500",
     title: "Creyotech CRM",
     description:
-      "Manage leads, customers, sales pipelines, support tickets, and business growth from one dashboard.",
+      "A complete customer relationship management solution designed to streamline sales, customer support, lead nurturing, and business growth.",
     features: [
-      "Lead Tracking",
+      "Lead Management",
       "Sales Pipeline",
       "Customer Database",
       "Task Management",
-      "Reporting",
+      "Support Ticket System",
+      "Advanced Analytics",
     ],
   },
+
   {
     id: "hotel-management",
-    title: "Hotel Management System",
+    icon: Hotel,
+    iconBg: "from-teal-500 to-cyan-600",
+    title: "Creyotech Hotel Management",
     description:
-      "Complete hotel management software for bookings, billing, room inventory, and guest management.",
+      "Simplify hotel operations with an all-in-one management platform for reservations, billing, guest services, inventory, and business reporting.",
     features: [
-      "Room Booking",
-      "Billing",
-      "Inventory",
-      "Guest Records",
-      "Reports",
+      "Room Reservation",
+      "Guest Check-in & Check-out",
+      "Billing & Invoicing",
+      "Room Inventory",
+      "Staff Management",
+      "Business Reports",
     ],
   },
+
   {
     id: "school-management",
-    title: "School Management System",
+    icon: GraduationCap,
+    iconBg: "from-amber-500 to-yellow-500",
+    title: "Creyotech School Management",
     description:
-      "Manage admissions, students, teachers, attendance, fees, and examinations from one platform.",
+      "Digitize educational institutions with a complete ERP solution for admissions, attendance, examinations, fee collection, and parent communication.",
     features: [
-      "Student Management",
-      "Attendance",
-      "Fee Collection",
-      "Exam Management",
-      "Parent Portal",
+      "Student Information System",
+      "Attendance Management",
+      "Fee Management",
+      "Examination Module",
+      "Parent & Teacher Portal",
+      "Reports & Analytics",
     ],
   },
 ];
