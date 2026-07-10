@@ -2,8 +2,6 @@ export const serviceSections = [
   {
     title: "Web Development",
     href: "/services/web-development",
-    description:
-      "Scalable websites, web applications, and custom business systems.",
     items: [
       {
         title: "Starter Business Presence",
@@ -27,8 +25,6 @@ export const serviceSections = [
   {
     title: "Digital Marketing",
     href: "/services/digital-marketing",
-    description:
-      "SEO, GEO, lead generation, and growth-focused marketing systems.",
     items: [
       {
         title: "Foundation Growth System",
@@ -48,8 +44,6 @@ export const serviceSections = [
   {
     title: "Social Media Marketing",
     href: "/services/social-media-marketing",
-    description:
-      "Content, paid advertising, influencer campaigns, and audience growth.",
     items: [
       {
         title: "Starter Growth Plan",
@@ -62,6 +56,53 @@ export const serviceSections = [
       {
         title: "Scale & Authority Plan",
         href: "/services/social-media-marketing#scale-authority-plan",
+      },
+    ],
+  },
+
+  {
+    title: "Miscellaneous Services",
+    href: "/services/miscellaneous-services",
+    items: [
+      {
+        title: "Bulk SMS",
+        href: "/services/miscellaneous-services#bulk-sms",
+      },
+      {
+        title: "Bulk Email Marketing",
+        href: "/services/miscellaneous-services#bulk-email-marketing",
+      },
+      {
+        title: "RCS Messaging",
+        href: "/services/miscellaneous-services#rcs-messaging",
+      },
+      {
+        title: "Call & WhatsApp API",
+        href: "/services/miscellaneous-services#call-whatsapp-api",
+      },
+      {
+        title: "Professional Email Setup",
+        href: "/services/miscellaneous-services#professional-email",
+      },
+      {
+        title: "Google Workspace",
+        href: "/services/miscellaneous-services#google-workspace",
+      },
+      {
+        title: "KarobarOne",
+        href: "/services/miscellaneous-services#karobarone",
+      },
+      {
+        title: "Creyotech CRM",
+        href: "/services/miscellaneous-services#creyotech-crm",
+      },
+      {
+        title: "Creyotech Hotel Management",
+        href: "/services/miscellaneous-services#hotel-management",
+      },
+      {
+        title: "Creyotech School Management",
+        href: "/services/miscellaneous-services#school-management",
       },
     ],
   },

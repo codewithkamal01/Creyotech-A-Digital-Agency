@@ -11,12 +11,15 @@ import SocialMediaMarketing from "./components/pages/services/SocialMediaMarketi
 import { Toaster } from "react-hot-toast";
 import ProposalSidebar from "./components/ProposalSidebar";
 import ChatWidget from "./components/chatbot/ChatWidget";
+import MiscellaneousServices from "./components/pages/services/MiscellaneousServices";
+import ScrollToHash from "./components/ScrollToHash";
 
 function App() {
   return (
     <BrowserRouter>
       <Toaster position="top-right" />
       <ScrollToTop />
+      <ScrollToHash/>
       <ProposalSidebar />
       <ChatWidget />
       <Routes>
@@ -36,6 +39,10 @@ function App() {
           <Route
             path="/services/social-media-marketing"
             element={<SocialMediaMarketing />}
+          />
+          <Route
+            path="/services/miscellaneous-services"
+            element={<MiscellaneousServices />}
           />
         </Route>
       </Routes>
