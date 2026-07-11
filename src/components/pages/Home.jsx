@@ -12,6 +12,7 @@ import BuiltInAssurances from "../home/BuiltInAssurances";
 import TechnologyStack from "../home/TechnologyStack";
 import AnimatedParagraph from "../home/AnimatedParagraph";
 import IndustriesSection from "../home/IndustriesSection";
+import AnimatedStats from "../AnimatedStats";
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
       <Services />
       <IndustriesSection/>
       <BuiltInAssurances />
+      <AnimatedStats/>
       <LatestWork />
       <EngagementModels />
       <TechnologyStack />
