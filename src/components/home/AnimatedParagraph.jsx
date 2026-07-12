@@ -39,9 +39,28 @@ export default function AnimatedParagraph() {
   return (
     <section
       ref={ref}
-      className="min-h-[60vh] flex items-center justify-center px-6 py-24"
+      className="min-h-[60vh] bg-gradient-to-b from-slate-50 via-white to-slate-100 dark:bg-none
+dark:bg-bg-dark flex items-center justify-center px-6 py-24"
     >
-      <div className="max-w-5xl text-center text-6xl md:text-6xl font-bold leading-[1.5] tracking-tight">
+      <div
+        className="mx-auto
+    px-4
+    text-center
+    font-bold
+    tracking-tight
+    leading-[1.2]
+
+    max-w-md
+    sm:max-w-md
+    md:max-w-2xl
+    lg:max-w-3xl
+    xl:max-w-6xl
+
+    text-5xl
+    sm:text-5xl
+    md:text-6xl
+    lg:text-7xl"
+      >
         {lines.map((line, index) => (
           <AnimatedLine
             key={index}
