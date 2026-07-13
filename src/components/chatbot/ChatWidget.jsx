@@ -75,6 +75,9 @@ function ChatWidget() {
               max-sm:bottom-4
               max-sm:-translate-x-1/2
               max-sm:w-[calc(100vw-32px)]
+              max-sm:gap-2
+              max-sm:px-3
+              max-sm:py-2.5
               dark:border-border-dark
               dark:bg-bg-dark
             "
@@ -122,6 +125,11 @@ function ChatWidget() {
           border-white
           bg-white
           shadow-[0_15px_40px_rgba(80,68,229,0.35)]
+          max-sm:bottom-4
+          max-sm:left-4
+          max-sm:h-14
+          max-sm:w-14
+          max-sm:border-2
           dark:border-slate-700
         "
       >

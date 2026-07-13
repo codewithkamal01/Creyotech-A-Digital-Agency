@@ -50,13 +50,13 @@ dark:bg-bg-dark flex items-center justify-center px-6 py-24"
     tracking-tight
     leading-[1.2]
 
-    max-w-md
+    max-w-sm
     sm:max-w-md
     md:max-w-2xl
     lg:max-w-3xl
     xl:max-w-6xl
 
-    text-5xl
+    text-[38px]
     sm:text-5xl
     md:text-6xl
     lg:text-7xl"

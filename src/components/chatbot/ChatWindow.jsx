@@ -100,13 +100,16 @@ left-6
 bottom-28
 z-50
 flex
-h-[450px]
-w-[350px]
-max-sm:left-1/2
-max-sm:bottom-4
-max-sm:-translate-x-1/2
-max-sm:w-[calc(100vw-32px)]
-max-sm:h-[calc(100vh-80px)]
+h-112.5
+w-87.5
+max-sm:left-2
+max-sm:right-2
+max-sm:bottom-20
+max-sm:w-auto
+max-sm:h-[72dvh]
+max-sm:max-h-120
+max-sm:rounded-2xl
+max-sm:shadow-[0_15px_50px_rgba(0,0,0,0.16)]
 max-h-[calc(100vh-96px)]
 flex-col
 overflow-hidden
@@ -127,13 +130,13 @@ dark:bg-bg-dark
             <img
               src={assets.supportAgent}
               alt=""
-              className="h-10 w-10 rounded-full object-cover"
+              className="h-10 w-10 rounded-full object-cover max-sm:h-8 max-sm:w-8"
             />
 
             <div>
-              <h2 className="font-semibold">Cora</h2>
+              <h2 className="font-semibold max-sm:text-sm">Cora</h2>
 
-              <p className="text-xs text-white/80">Creyotech Support</p>
+              <p className="text-xs text-white/80 max-sm:text-[11px]">Creyotech Support</p>
             </div>
           </div>
 
@@ -152,14 +155,18 @@ dark:bg-bg-dark
 
       <div
         className="
-flex overflow-x-auto gap-2  horizontal-scrollbar
+flex overflow-x-auto gap-2 horizontal-scrollbar
 border-b
 border-border-light
 bg-bg-soft
 px-3
 py-2
+max-sm:flex-wrap
+max-sm:gap-1.5
+max-sm:px-2
+max-sm:py-1.5
 dark:border-border-dark
-dark:bg-white/[0.03]
+dark:bg-white/3
 "
       >
         {quickActions.map((item) => {
@@ -171,29 +178,22 @@ dark:bg-white/[0.03]
               onClick={() => sendMessage(item.text)}
               className="
 flex
-
 shrink-0
-
 items-center
 gap-1.5
-
 rounded-full
-
 bg-primary/10
-
 px-2
 py-1
-
 text-[11px]
-
 font-medium
-
 text-primary
-
 transition
-
 hover:bg-primary
 hover:text-white
+max-sm:text-[10px]
+max-sm:px-2
+max-sm:py-1
 "
             >
               <Icon size={14} />
@@ -211,9 +211,11 @@ hover:text-white
     flex-1
     overflow-y-auto
     hide-scrollbar
-    space-y-5
+    space-y-4
 px-3
 py-3
+max-sm:px-2
+max-sm:py-2
 "
       >
         {messages.filter(Boolean).map((message, index) => (
@@ -233,16 +235,15 @@ py-3
                 y: 0,
               }}
               className={`
-max-w-[80%]
-
+max-w-[88%]
+sm:max-w-[80%]
 rounded-3xl
-
 px-3
 py-2.5
-
 text-sm
-
 leading-6
+max-sm:text-[13px]
+max-sm:leading-5
 
 ${
   message.role === "assistant"
@@ -289,25 +290,18 @@ text-white
       <div
         className="
 flex
-
 items-center
-
 gap-2
-
 rounded-2xl
-
 border
-
 border-border-light
-
 bg-bg-soft
-
 px-3
-
 py-2
-
+max-sm:px-2
+max-sm:py-2
 dark:border-border-dark
-dark:bg-white/[0.03]
+dark:bg-white/3
 "
       >
         <input
@@ -317,15 +311,12 @@ dark:bg-white/[0.03]
           placeholder="Ask us anything..."
           className="
 flex-1
-
 bg-transparent
-
 py-2.5
-
 text-sm
-
 outline-none
-
+max-sm:py-2
+max-sm:text-[13px]
 dark:text-white
 "
         />
@@ -334,22 +325,17 @@ dark:text-white
           onClick={() => sendMessage()}
           className="
 flex
-
 h-9
 w-9
-
 items-center
 justify-center
-
 rounded-full
-
 bg-primary
-
 text-white
-
 transition
-
 hover:scale-105
+max-sm:h-8
+max-sm:w-8
 "
         >
           <Send size={16} />

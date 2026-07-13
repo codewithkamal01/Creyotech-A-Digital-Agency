@@ -13,13 +13,14 @@ import ProposalSidebar from "./components/ProposalSidebar";
 import ChatWidget from "./components/chatbot/ChatWidget";
 import MiscellaneousServices from "./components/pages/services/MiscellaneousServices";
 import ScrollToHash from "./components/ScrollToHash";
+import JobDetails from "./components/career/JobDetails";
 
 function App() {
   return (
     <BrowserRouter>
       <Toaster position="top-right" />
       <ScrollToTop />
-      <ScrollToHash/>
+      <ScrollToHash />
       <ProposalSidebar />
       <ChatWidget />
       <Routes>
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/career/:slug" element={<JobDetails />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route
             path="/services/web-development"
@@ -40,7 +42,7 @@ function App() {
             path="/services/social-media-marketing"
             element={<SocialMediaMarketing />}
           />
-           <Route
+          <Route
             path="/services/miscellaneous-services"
             element={<MiscellaneousServices />}
           />
