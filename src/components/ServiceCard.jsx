@@ -1,12 +1,23 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-function ServiceCard({ title, icon: Icon, desc }) {
+function ServiceCard({ title, icon: Icon, desc, href }) {
   const [flipped, setFlipped] = useState(false);
+
+  const toggleFlip = () => setFlipped((prev) => !prev);
 
   return (
     <div
-      className="group w-full [perspective:1400px]"
-      onClick={() => setFlipped(!flipped)}
+      className="group w-full cursor-pointer [perspective:1400px]"
+      onClick={toggleFlip}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          toggleFlip();
+        }
+      }}
     >
       <div
         className={`
@@ -238,7 +249,9 @@ function ServiceCard({ title, icon: Icon, desc }) {
             </div>
 
             {/* CTA */}
-            <button
+            <Link
+              to={href}
+              onClick={(event) => event.stopPropagation()}
               className="
                 mt-8
                 inline-flex
@@ -267,7 +280,7 @@ function ServiceCard({ title, icon: Icon, desc }) {
             >
               Learn More
               <span className="text-base">↗</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

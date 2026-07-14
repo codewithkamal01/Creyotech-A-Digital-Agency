@@ -4,6 +4,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import assets from "../assets/assets";
 import footerImage from "../assets/gallery/gallery8.webp";
 import FloatingContact from "./FloatingContact";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const socialLinks = [
@@ -30,10 +31,13 @@ function Footer() {
   ];
 
   const footerLinks = [
-    "Privacy Policy",
-    "Refund Policy",
-    "Terms of Service",
-    "Project Delivery Policy",
+    { name: "Privacy Policy", path: "/privacy-policy" },
+    { name: "Refund Policy", path: "/refund-policy" },
+    { name: "Terms of Service", path: "/terms-of-service" },
+    {
+      name: "Project Delivery Policy",
+      path: "/project-delivery-policy",
+    },
   ];
 
   return (
@@ -82,13 +86,16 @@ function Footer() {
 
             <div className="flex flex-wrap gap-4 text-sm text-white/70">
               {footerLinks.map((link) => (
-                <a
-                  key={link}
-                  href="#"
-                  className="transition hover:text-primary"
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="transition duration-300 hover:text-primary"
                 >
-                  {link}
-                </a>
+                  {link.name}
+                </Link>
               ))}
             </div>
           </motion.div>

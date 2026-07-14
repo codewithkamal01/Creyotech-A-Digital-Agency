@@ -32,7 +32,7 @@ function LatestWork() {
       id="our-work"
       className="
         px-4
-        py-24
+        py-15
         text-text-primary
         dark:text-text-light
         sm:px-8

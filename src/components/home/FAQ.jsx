@@ -37,7 +37,7 @@ function FAQ() {
     relative
     overflow-hidden
     px-4
-    py-24
+    py-15
     sm:px-8
     lg:px-16
     xl:px-40

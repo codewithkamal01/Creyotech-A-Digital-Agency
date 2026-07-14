@@ -141,19 +141,31 @@ function OfficeLocations() {
                   For project inquiries, partnerships, and business discussions.
                 </p>
 
-                <div className="mt-5 space-y-2 dark:text-text-light">
-                  <a
-                    href="mailto:hr@creyotech.com"
-                    className="
+                <div className="mt-5 space-y-2 flex flex-col dark:text-text-light">
+                  <div className="flex gap-5">
+                    <a
+                      href="mailto:hr@creyotech.com"
+                      className="
               block
               font-medium
               transition-colors
               hover:text-primary
             "
-                  >
-                    hr@creyotech.com
-                  </a>
-
+                    >
+                      hr@creyotech.com
+                    </a>
+                    <a
+                      href="mailto:creyotech@gmail.com"
+                      className="
+              block
+              font-medium
+              transition-colors
+              hover:text-primary
+            "
+                    >
+                      creyotech@gmail.com
+                    </a>
+                  </div>
                   <a
                     href="mailto:creyotech@gmail.com"
                     className="
@@ -163,7 +175,7 @@ function OfficeLocations() {
               hover:text-primary
             "
                   >
-                    creyotech@gmail.com
+                    creyotechofficial@gmail.com
                   </a>
                 </div>
 

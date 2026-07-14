@@ -121,7 +121,7 @@ function AnimatedStats() {
   ];
 
   return (
-    <section className="relative py-20">
+    <section className="relative py-18">
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
         <div className="mx-auto mb-16 max-w-3xl text-center">

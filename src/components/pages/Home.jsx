@@ -21,7 +21,7 @@ function Home() {
       <AnimatedParagraph/>
       <TrustedBy
         badge="Trusted Worldwide"
-        title="Trusted by Leading Companies"
+        title="Our Global Technology Partners"
         logos={company_logos}
       />
       <SpecialityCard />
