@@ -70,7 +70,7 @@ const industries = [
 
 function IndustriesSection() {
   return (
-    <section className="relative overflow-hidden bg-bg-soft py-24 dark:bg-bg-dark">
+    <section className="relative overflow-hidden bg-bg-soft py-18 dark:bg-bg-dark">
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />

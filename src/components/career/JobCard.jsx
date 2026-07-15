@@ -93,8 +93,10 @@ function JobCard({ job }) {
             mt-1.5
             max-w-3xl
             leading-relaxed
+             line-clamp-2
             text-text-secondary
             dark:text-text-light/75
+            text-sm
           "
         >
           {job.description}
@@ -163,7 +165,7 @@ function JobCard({ job }) {
 
           {/* CTA */}
           <Link
-            to={`/careers/${job.slug}`}
+            to={`/career/${job.slug}`}
             className="
               inline-flex
               items-center

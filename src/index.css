@@ -42,13 +42,20 @@
   /* Marquee animation for card rows */
   .marquee-track {
     display: flex;
-    gap: 1.5rem;
+    width: max-content;
+    gap: 1rem;
     align-items: stretch;
-    animation: marquee 8s linear infinite;
+    will-change: transform;
+    animation: marquee 24s linear infinite;
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
   }
 
   .marquee-card {
-    min-width: 18rem; /* adjust card width */
+    min-width: 17rem;
+    max-width: 20rem;
     flex-shrink: 0;
   }
 
@@ -58,6 +65,12 @@
     }
     100% {
       transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .marquee-card {
+      min-width: 15rem;
     }
   }
 

@@ -7,7 +7,7 @@ function SpecialityCard() {
     {
       title: "Optimized Budget",
       icon: <Wallet size={28} />,
-      desc: "Affordable and scalable digital solutions tailored for startups and growing businesses.",
+      desc: "Tailored for startups, micro, small & medium enterprises, and growing businesses.",
     },
     {
       title: "Fast Delivery",
@@ -22,7 +22,7 @@ function SpecialityCard() {
     {
       title: "Consistent Quality",
       icon: <BadgeCheck size={28} />,
-      desc: "Strict quality standards and testing processes for reliable digital experiences.",
+      desc: "Rigorous quality testing and strict compliance with acceptance criteria for reliable digital experiences and consistent quality.",
     },
   ];
 
@@ -32,14 +32,14 @@ function SpecialityCard() {
         relative
         overflow-hidden
         px-4
-        py-20
+        py-8
         sm:px-8
         lg:px-16
         xl:px-24
       "
     >
-      <div className="mb-10 dark:text-text-light text-xl flex flex-col gap-8 items-center">
-        <Title title="Our Specialities" />
+      <div className="mb-4 dark:text-text-light text-xl flex flex-col gap-8 items-center">
+        <Title title="Our Specialities"/>
       </div>
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
