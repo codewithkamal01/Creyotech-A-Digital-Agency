@@ -11,8 +11,8 @@ function TermsOfService() {
       <LegalSection title="Overview">
         <p>
           This website is operated by <strong>Creyotech Learning</strong>, a
-          subsidiary of Creyotech. Throughout this website, the terms "we",
-          "us", and "our" refer to Creyotech Learning.
+          subsidiary of Creyotech. Throughout this website, the terms &quot;we&quot;,
+          &quot;us&quot;, and &quot;our&quot; refer to Creyotech Learning.
         </p>
 
         <p>
@@ -158,8 +158,8 @@ function TermsOfService() {
 
       <LegalSection title="11. Disclaimer of Warranties">
         <p>
-          Our website, products, and services are provided on an "as is" and "as
-          available" basis without warranties of any kind, whether express or
+          Our website, products, and services are provided on an &quot;as is&quot; and &quot;as
+          available&quot; basis without warranties of any kind, whether express or
           implied.
         </p>
 
