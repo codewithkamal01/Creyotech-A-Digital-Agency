@@ -104,10 +104,7 @@ lg:py-12
             <div className="relative z-10 my-10 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
 
             {/* Features */}
-            <ul
-              className="relative z-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3"
-              aria-label={`${service.title} features`}
-            >
+            <ul className="relative z-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3" aria-label={`${service.title} features`}>
               {service.features.map((feature, i) => (
                 <li
                   key={`${service.id}-feature-${i}`}
