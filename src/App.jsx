@@ -13,6 +13,7 @@ import ProposalSidebar from "./components/ProposalSidebar";
 import ChatWidget from "./components/chatbot/ChatWidget";
 import MiscellaneousServices from "./components/pages/services/MiscellaneousServices";
 import ScrollToHash from "./components/ScrollToHash";
+import JobDetails from "./components/career/JobDetails";
 
 function App() {
   return (
