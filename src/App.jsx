@@ -13,18 +13,13 @@ import ProposalSidebar from "./components/ProposalSidebar";
 import ChatWidget from "./components/chatbot/ChatWidget";
 import MiscellaneousServices from "./components/pages/services/MiscellaneousServices";
 import ScrollToHash from "./components/ScrollToHash";
-import JobDetails from "./components/career/JobDetails";
-import TermsOfService from "./components/pages/TermsOfService";
-import ProjectDeliveryPolicy from "./components/pages/ProjectDeliveryPolicy";
-import PrivacyPolicyy from "./components/pages/PrivacyPolicyy";
-import RefundPolicy from "./components/pages/RefundPolicy";
 
 function App() {
   return (
     <BrowserRouter>
       <Toaster position="top-right" />
       <ScrollToTop />
-      <ScrollToHash />
+      <ScrollToHash/>
       <ProposalSidebar />
       <ChatWidget />
       <Routes>
@@ -49,14 +44,6 @@ function App() {
           <Route
             path="/services/miscellaneous-services"
             element={<MiscellaneousServices />}
-          />
-
-          <Route path="/privacy-policy" element={<PrivacyPolicyy />} />
-          <Route path="/refund-policy" element={<RefundPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route
-            path="/project-delivery-policy"
-            element={<ProjectDeliveryPolicy />}
           />
         </Route>
       </Routes>
