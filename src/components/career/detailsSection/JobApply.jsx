@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { submitCareerApplication } from "../../../services/careerService";
 import {
   FileText,
   Shield,
@@ -6,18 +7,21 @@ import {
   User,
   Mail,
   Phone,
+  MessageCircle,
+  Briefcase,
   Loader2,
 } from "lucide-react";
 import FormField from "./FormField";
 import UploadCard from "./UploadCard";
 import ApplicationSuccess from "./ApplicationSuccess";
 
-function JobApply() {
+function JobApply({ job }) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
+    whatsapp: "",
     agreed: false,
   });
 
@@ -82,8 +86,30 @@ function JobApply() {
 
     setIsSubmitting(true);
     try {
-      // Simulate API call payload handling
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const payload = new FormData();
+      const fullName = [formData.firstName, formData.lastName]
+        .filter(Boolean)
+        .join(" ")
+        .trim();
+
+      payload.append("name", fullName);
+      payload.append("phone_number", formData.phone);
+      payload.append(
+        "whatsapp_number",
+        (formData.whatsapp || formData.phone).trim(),
+      );
+      payload.append("email", formData.email);
+      payload.append("position", job?.title || "General Application");
+      payload.append(
+        "recaptcha_token",
+        import.meta.env.VITE_RECAPTCHA_TOKEN || "test",
+      );
+      payload.append("resume", files.resume);
+      payload.append("address_proof", files.govtProof);
+      payload.append("marksheet", files.education);
+
+      await submitCareerApplication(payload);
+
       setIsSubmitted(true);
     } catch {
       setErrors({ form: "Something went wrong. Please try again." });
@@ -99,6 +125,7 @@ function JobApply() {
       lastName: "",
       email: "",
       phone: "",
+      whatsapp: "",
       agreed: false,
     });
     setFiles({ resume: null, govtProof: null, education: null });
@@ -143,7 +170,7 @@ function JobApply() {
               label="First Name"
               name="firstName"
               icon={<User size={18} />}
-              placeholder="John Doe"
+              placeholder="John"
               value={formData.firstName}
               onChange={handleInputChange}
               error={errors.firstName}
@@ -153,7 +180,7 @@ function JobApply() {
               label="Last Name"
               name="lastName"
               icon={<User size={18} />}
-              placeholder="John Doe"
+              placeholder="Doe"
               value={formData.lastName}
               onChange={handleInputChange}
               error={errors.lastName}
@@ -179,6 +206,27 @@ function JobApply() {
               value={formData.phone}
               onChange={handleInputChange}
               error={errors.phone}
+            />
+
+            <FormField
+              label="Position Applying For"
+              name="position"
+              icon={<Briefcase size={18} />}
+              placeholder="Position"
+              value={job?.title || "General Application"}
+              readOnly
+              className="md:col-span-2"
+            />
+
+            <FormField
+              label="WhatsApp Number"
+              name="whatsapp"
+              type="tel"
+              icon={<MessageCircle size={18} />}
+              placeholder="+1 (555) 000-0000"
+              value={formData.whatsapp}
+              onChange={handleInputChange}
+              error={errors.whatsapp}
             />
           </div>
 

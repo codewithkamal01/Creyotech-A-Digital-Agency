@@ -36,7 +36,7 @@ function JobDetails() {
       <JobListSection title="Why Join Us" items={job.whyJoin} />
 
       {/* Apply */}
-      <JobApply />
+      <JobApply job={job} />
     </>
   );
 }

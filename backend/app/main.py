@@ -1,0 +1,47 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from app.core.config import settings
+from app.core.exceptionHandler import register_exception_handlers
+from app.routes.contactRouter import router as contactRouter
+from app.routes.careerRouter import router as careerRouter
+
+
+app = FastAPI(
+    title=settings.APP_NAME,
+    version=settings.APP_VERSION,
+)
+
+# CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Register Global Exception Handlers
+register_exception_handlers(app)
+
+
+@app.get("/")
+def home():
+    return {
+        "app": settings.APP_NAME,
+        "version": settings.APP_VERSION,
+        "status": "Running",
+    }
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy",
+    }
+
+
+app.include_router(contactRouter)
+app.include_router(careerRouter)
