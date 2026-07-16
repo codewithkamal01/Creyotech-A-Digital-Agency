@@ -26,17 +26,6 @@ function JobHero({ job }) {
             Back to Careers
           </a>
 
-          {/* Badges Layout */}
-          <div className="mb-6 flex flex-wrap gap-2.5">
-            <span className="rounded-full bg-primary/10 px-3.5 py-1 text-xs font-semibold tracking-wide uppercase text-primary">
-              {job.category}
-            </span>
-
-            <span className="rounded-full bg-green-500/10 px-3.5 py-1 text-xs font-semibold tracking-wide uppercase text-green-600 dark:text-green-400">
-              {job.type}
-            </span>
-          </div>
-
           {/* Main Job Title */}
           <h1 className="text-3xl font-extrabold tracking-tight text-text-primary md:text-5xl lg:leading-[1.15] dark:text-text-light">
             {job.title}

@@ -15,7 +15,7 @@ import FormField from "./FormField";
 import UploadCard from "./UploadCard";
 import ApplicationSuccess from "./ApplicationSuccess";
 
-function JobApply({ job }) {
+function JobApply({ job, compact = false }) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -144,22 +144,24 @@ function JobApply({ job }) {
   }
 
   return (
-    <section id="apply" className="py-24 transition-colors duration-300">
-      <div className="mx-auto max-w-4xl px-6">
-        <div className="mb-12 text-center">
-          <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            Apply for this Position
-          </h2>
-          <p className="mt-4 text-gray-600 dark:text-gray-400">
-            Fill in your details and upload the required documentation down
-            below.
-          </p>
-        </div>
+    <section id="apply" className={compact ? "w-full" : "py-24 transition-colors duration-300"}>
+      <div className={compact ? "mx-auto w-full" : "mx-auto max-w-4xl px-6"}>
+        {!compact && (
+          <div className="mb-12 text-center">
+            <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+              Apply for this Position
+            </h2>
+            <p className="mt-4 text-gray-600 dark:text-gray-400">
+              Fill in your details and upload the required documentation down
+              below.
+            </p>
+          </div>
+        )}
 
         <form
           onSubmit={handleSubmit}
           noValidate
-          className="rounded-3xl border border-gray-200 bg-white p-8 shadow-xl dark:border-zinc-800 dark:bg-bg-dark dark:text-white transition-all"
+          className={`rounded-[28px] border border-gray-200 bg-white shadow-xl transition-all dark:border-zinc-800 dark:bg-bg-dark dark:text-white ${compact ? "p-6 md:p-7" : "p-8"}`}
         >
           {/* Personal Details */}
           <h3 className="mb-6 text-xl font-bold tracking-tight">
@@ -234,7 +236,7 @@ function JobApply({ job }) {
           <h3 className="mb-6 text-xl font-bold tracking-tight">
             Required Documents
           </h3>
-          <div className="grid gap-6 sm:grid-cols-3 mb-8">
+          <div className={`grid gap-4 ${compact ? "md:grid-cols-1" : "sm:grid-cols-3"} mb-8`}>
             <UploadCard
               title="Resume / CV *"
               icon={<FileText size={24} />}
