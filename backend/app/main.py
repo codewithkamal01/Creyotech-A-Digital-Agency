@@ -17,6 +17,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
+        "https://creyotech-official-website.vercel.app/",
+        "https://www.creyotech.com/",
     ],
     allow_credentials=True,
     allow_methods=["*"],
