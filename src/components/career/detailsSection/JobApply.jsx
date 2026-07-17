@@ -6,7 +6,6 @@ import {
   GraduationCap,
   User,
   Mail,
-  Phone,
   MessageCircle,
   Briefcase,
   Loader2,
@@ -20,7 +19,6 @@ function JobApply({ job, compact = false }) {
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
     whatsapp: "",
     agreed: false,
   });
@@ -66,7 +64,6 @@ function JobApply({ job, compact = false }) {
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Please enter a valid email address";
     }
-    if (!formData.phone.trim()) newErrors.phone = "Phone number is required";
     if (!files.resume) newErrors.resume = "Please upload your resume";
     if (!files.govtProof)
       newErrors.govtProof =
@@ -93,11 +90,7 @@ function JobApply({ job, compact = false }) {
         .trim();
 
       payload.append("name", fullName);
-      payload.append("phone_number", formData.phone);
-      payload.append(
-        "whatsapp_number",
-        (formData.whatsapp || formData.phone).trim(),
-      );
+      payload.append("whatsapp_number", (formData.whatsapp || "").trim());
       payload.append("email", formData.email);
       payload.append("position", job?.title || "General Application");
       payload.append(
@@ -124,7 +117,6 @@ function JobApply({ job, compact = false }) {
       firstName: "",
       lastName: "",
       email: "",
-      phone: "",
       whatsapp: "",
       agreed: false,
     });
@@ -144,7 +136,10 @@ function JobApply({ job, compact = false }) {
   }
 
   return (
-    <section id="apply" className={compact ? "w-full" : "py-24 transition-colors duration-300"}>
+    <section
+      id="apply"
+      className={compact ? "w-full" : "py-24 transition-colors duration-300"}
+    >
       <div className={compact ? "mx-auto w-full" : "mx-auto max-w-4xl px-6"}>
         {!compact && (
           <div className="mb-12 text-center">
@@ -161,10 +156,26 @@ function JobApply({ job, compact = false }) {
         <form
           onSubmit={handleSubmit}
           noValidate
-          className={`rounded-[28px] border border-gray-200 bg-white shadow-xl transition-all dark:border-zinc-800 dark:bg-bg-dark dark:text-white ${compact ? "p-6 md:p-7" : "p-8"}`}
+          className={`rounded-[28px] border border-slate-200/70 bg-white shadow-[0_20px_50px_-24px_rgba(15,23,42,0.35)] transition-all dark:border-zinc-800 dark:bg-bg-dark dark:text-white ${compact ? "p-6 md:p-7" : "p-8"}`}
         >
+          <div className="mb-8 rounded-2xl bg-linear-to-r from-indigo-600 via-violet-600 to-fuchsia-600 p-4 text-white shadow-lg shadow-indigo-600/20">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-indigo-100">
+                  Quick application
+                </p>
+                <h3 className="mt-1 text-lg font-semibold">
+                  Share your details and upload the required files
+                </h3>
+              </div>
+              <div className="rounded-2xl bg-white/15 p-2.5 backdrop-blur-sm">
+                <Briefcase size={18} />
+              </div>
+            </div>
+          </div>
+
           {/* Personal Details */}
-          <h3 className="mb-6 text-xl font-bold tracking-tight">
+          <h3 className="mb-6 text-lg font-semibold tracking-tight text-slate-900 dark:text-white">
             Personal Details
           </h3>
           <div className="grid gap-6 md:grid-cols-2 mb-10">
@@ -172,7 +183,7 @@ function JobApply({ job, compact = false }) {
               label="First Name"
               name="firstName"
               icon={<User size={18} />}
-              placeholder="John"
+              placeholder="Ram"
               value={formData.firstName}
               onChange={handleInputChange}
               error={errors.firstName}
@@ -182,7 +193,7 @@ function JobApply({ job, compact = false }) {
               label="Last Name"
               name="lastName"
               icon={<User size={18} />}
-              placeholder="Doe"
+              placeholder="Sharma"
               value={formData.lastName}
               onChange={handleInputChange}
               error={errors.lastName}
@@ -193,23 +204,21 @@ function JobApply({ job, compact = false }) {
               name="email"
               type="email"
               icon={<Mail size={18} />}
-              placeholder="john@example.com"
+              placeholder="ramsharma@gmail.com"
               value={formData.email}
               onChange={handleInputChange}
               error={errors.email}
             />
-
             <FormField
-              label="Phone Number"
-              name="phone"
+              label="WhatsApp Number"
+              name="whatsapp"
               type="tel"
-              icon={<Phone size={18} />}
-              placeholder="+1 (555) 000-0000"
-              value={formData.phone}
+              icon={<MessageCircle size={18} />}
+              placeholder="+91 94726 56693"
+              value={formData.whatsapp}
               onChange={handleInputChange}
-              error={errors.phone}
+              error={errors.whatsapp}
             />
-
             <FormField
               label="Position Applying For"
               name="position"
@@ -219,27 +228,16 @@ function JobApply({ job, compact = false }) {
               readOnly
               className="md:col-span-2"
             />
-
-            <FormField
-              label="WhatsApp Number"
-              name="whatsapp"
-              type="tel"
-              icon={<MessageCircle size={18} />}
-              placeholder="+1 (555) 000-0000"
-              value={formData.whatsapp}
-              onChange={handleInputChange}
-              error={errors.whatsapp}
-            />
           </div>
 
           {/* Uploads */}
-          <h3 className="mb-6 text-xl font-bold tracking-tight">
+          <h3 className="mb-6 text-lg font-semibold tracking-tight text-slate-900 dark:text-white">
             Required Documents
           </h3>
-          <div className={`grid gap-4 ${compact ? "md:grid-cols-1" : "sm:grid-cols-3"} mb-8`}>
+          <div className="mb-8 grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             <UploadCard
               title="Resume / CV *"
-              icon={<FileText size={24} />}
+              icon={<FileText size={18} />}
               file={files.resume}
               error={errors.resume}
               onFileSelect={(file) => handleFileChange("resume", file)}
@@ -248,7 +246,7 @@ function JobApply({ job, compact = false }) {
 
             <UploadCard
               title="Government ID *"
-              icon={<Shield size={24} />}
+              icon={<Shield size={18} />}
               file={files.govtProof}
               error={errors.govtProof}
               onFileSelect={(file) => handleFileChange("govtProof", file)}
@@ -256,8 +254,8 @@ function JobApply({ job, compact = false }) {
             />
 
             <UploadCard
-              title="Education Certificate *"
-              icon={<GraduationCap size={24} />}
+              title="Education Proof  *"
+              icon={<GraduationCap size={18} />}
               file={files.education}
               error={errors.education}
               onFileSelect={(file) => handleFileChange("education", file)}
@@ -297,7 +295,7 @@ function JobApply({ job, compact = false }) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="mt-8 w-full inline-flex justify-center items-center gap-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 disabled:bg-indigo-600/50 py-4 text-base font-semibold text-white shadow-sm transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 active:scale-[0.99]"
+            className="mt-8 w-full inline-flex justify-center items-center gap-2 rounded-xl bg-linear-to-r from-indigo-600 to-violet-600 py-4 text-base font-semibold text-white shadow-lg shadow-indigo-600/20 transition-all hover:from-indigo-500 hover:to-violet-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 active:scale-[0.99] disabled:from-indigo-600/50 disabled:to-violet-600/50"
           >
             {isSubmitting ? (
               <>

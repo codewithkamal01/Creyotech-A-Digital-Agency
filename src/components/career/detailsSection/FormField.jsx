@@ -26,11 +26,11 @@ function FormField({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className={`w-full rounded-xl border bg-gray-50/50 py-3 pl-11 pr-4 text-sm outline-none transition-all dark:bg-zinc-800/50
+          className={`w-full rounded-2xl border border-gray-200 bg-gray-50/70 py-3 pl-11 pr-4 text-sm shadow-sm outline-none transition-all placeholder:text-gray-400 dark:border-zinc-700 dark:bg-zinc-800/60
             ${
               error
                 ? "border-rose-400 focus:border-rose-500 focus:ring-2 focus:ring-rose-500/10 dark:border-rose-500/40"
-                : "border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/10 dark:border-zinc-700 dark:focus:border-indigo-500"
+                : "focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/10 dark:focus:border-indigo-500"
             }`}
         />
       </div>

@@ -48,16 +48,16 @@ function JobAbout({ job }) {
   ];
 
   return (
-    <section className="py-12 md:py-20">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="py-12 md:py-10 ">
+      <div className="mx-auto max-w-7xl px-0">
         <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr] xl:items-start">
-          <div className="max-h-full overflow-y-auto rounded-[28px] border border-slate-200/70 bg-white/90 p-6 shadow-[0_24px_60px_-30px_rgba(15,23,42,0.25)] backdrop-blur dark:border-white/10 dark:bg-secondary md:p-8">
+          <div className="max-h-full overflow-y-auto bg-white/90 p-6 rounded-2xl  dark:border-white/10 dark:bg-secondary md:p-8">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div>
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary dark:bg-primary/20">
                   <BriefcaseBusiness size={24} />
                 </div>
-                <h2 className="text-2xl font-bold tracking-tight text-text-primary dark:text-text-light">
+                <h2 className="text-3xl font-bold tracking-tight text-text-primary dark:text-text-light">
                   {job?.title || "Role Overview"}
                 </h2>
                 <p className="mt-2 text-sm text-text-secondary dark:text-text-light/70">
@@ -86,7 +86,7 @@ function JobAbout({ job }) {
               ))}
             </div>
 
-            <div className="mt-8 space-y-5 pr-2">
+            <div className="mt-8 space-y-5">
               {sections.map((section) => {
                 const Icon = section.icon;
                 return (
@@ -94,8 +94,8 @@ function JobAbout({ job }) {
                     key={section.title}
                     className="rounded-3xl border border-slate-200 bg-slate-50/70 p-5 dark:border-white/10 dark:bg-zinc-800/40"
                   >
-                    <div className="flex items-center gap-2 text-sm font-semibold text-text-primary dark:text-text-light">
-                      <Icon size={18} />
+                    <div className="flex items-center gap-2 text-xl font-semibold text-text-primary dark:text-text-light">
+                      <Icon size={24} />
                       {section.title}
                     </div>
 
@@ -106,11 +106,30 @@ function JobAbout({ job }) {
                     ) : null}
 
                     {section.items ? (
-                      <ul className="mt-4 space-y-2 text-sm leading-7 text-text-secondary dark:text-text-light/80">
+                      <ul
+                        className={`mt-4 text-sm leading-7 text-text-secondary dark:text-text-light/80 ${
+                          section.title === "Tech stack"
+                            ? "flex flex-wrap gap-2"
+                            : "space-y-2"
+                        }`}
+                      >
                         {section.items.map((item) => (
-                          <li key={item} className="flex gap-2">
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                            <span>{item}</span>
+                          <li
+                            key={item}
+                            className={
+                              section.title === "Tech stack"
+                                ? "rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary dark:border-primary/25 dark:bg-primary/15 dark:text-primary/90"
+                                : "flex gap-2"
+                            }
+                          >
+                            {section.title === "Tech stack" ? (
+                              <span>{item}</span>
+                            ) : (
+                              <>
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                                <span>{item}</span>
+                              </>
+                            )}
                           </li>
                         ))}
                       </ul>

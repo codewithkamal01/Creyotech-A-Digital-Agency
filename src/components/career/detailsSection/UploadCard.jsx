@@ -36,7 +36,7 @@ function UploadCard({ title, icon, file, error, onFileSelect, onClear }) {
 
   return (
     <div className="flex w-full flex-col gap-1.5">
-      <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+      <span className="text-xs font-semibold uppercase tracking-wide text-gray-700 dark:text-gray-300">
         {title}
       </span>
       <div
@@ -45,7 +45,7 @@ function UploadCard({ title, icon, file, error, onFileSelect, onClear }) {
         onDragLeave={handleDrag}
         onDrop={handleDrop}
         onClick={() => !file && fileInputRef.current?.click()}
-        className={`relative flex min-h-[160px] flex-col items-center justify-center rounded-2xl border-2 border-dashed p-4 text-center transition-all duration-200
+        className={`relative flex min-h-32.5 flex-col items-center justify-center rounded-2xl border-2 border-dashed p-3 text-center transition-all duration-200
           ${
             file
               ? "cursor-default border-solid bg-gray-50/50 dark:bg-zinc-800/30"
@@ -73,13 +73,13 @@ function UploadCard({ title, icon, file, error, onFileSelect, onClear }) {
 
         {file ? (
           <div className="flex w-full flex-col items-center px-2">
-            <div className="mb-2 rounded-xl bg-indigo-50 p-2 text-indigo-500 dark:bg-indigo-950/40">
+            <div className="mb-2 rounded-xl bg-indigo-50 p-1.5 text-indigo-500 dark:bg-indigo-950/40">
               {icon}
             </div>
-            <p className="mb-1 max-w-full truncate px-4 text-sm font-medium text-gray-900 dark:text-zinc-100">
+            <p className="mb-1 max-w-full truncate px-3 text-xs font-medium text-gray-900 dark:text-zinc-100">
               {file.name}
             </p>
-            <p className="mb-3 text-xs text-gray-400">
+            <p className="mb-2 text-[11px] text-gray-400">
               {(file.size / (1024 * 1024)).toFixed(2)} MB
             </p>
             <button
@@ -100,13 +100,13 @@ function UploadCard({ title, icon, file, error, onFileSelect, onClear }) {
             >
               {icon}
             </div>
-            <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+            <p className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400">
               Click to upload{" "}
               <span className="font-normal text-gray-500 dark:text-gray-400">
                 or drag & drop
               </span>
             </p>
-            <p className="mt-1 text-[11px] text-gray-400">
+            <p className="mt-1 text-[10px] text-gray-400">
               PDF, DOC, or DOCX up to 10MB
             </p>
           </>
